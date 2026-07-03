@@ -1361,7 +1361,11 @@ footer .col-lg-4 a::before{display:none;}
   width:56px; height:4px; border-radius:4px; background:linear-gradient(90deg,var(--maroon),var(--maroon-darker));
 }
 .about-hero-wave{width:100%; height:40px; display:block; margin-top:1rem;}
-.stats-row{margin-top:1.2rem; transform:translateY(38px); margin-bottom:-38px; position:relative; z-index:2;}
+.stats-row{  margin-top:1.2rem;
+  transform:translateY(38px);
+  bottom:0px;
+  position:relative;
+  z-index:2;}
 .stat-card{
   background:#fff; border-radius:18px; padding:1.9rem 1.2rem; text-align:center; height:100%;
   border:1px solid var(--line); box-shadow:0 24px 48px -28px rgba(74,13,13,.22);
