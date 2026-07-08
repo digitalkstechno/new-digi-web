@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Products | Digitalks Techno</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- FontAwesome 6 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container container-xl">
+    <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/Digitalkslogo.webp" alt="Digitalks Techno logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav nav-links mx-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="solution.html">Solution</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="ourproducts.html">Our Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="innovations.html">Our Innovations</a></li>
+        <li class="nav-item"><a class="nav-link" href="life_at_digitalks.html">Life at Digitalks</a></li>
+      </ul>
+    </div>
+     <a href="contact.html" class="btn-maroon d-none d-lg-inline-flex">Get Quote</a>
+  </div>
+</nav>
+
+<!-- ========== PRODUCTS HERO ========== -->
+<section class="about-hero">
+  <div class="about-hero-dots"></div>
+  <div class="container container-xl text-center reveal reveal-1">
+    <span class="eyebrow">Our Products</span>
+    <h1 class="about-hero-title">Elevating Your Business With Smart Solutions</h1>
+    <p class="section-sub mx-auto">Choose from our curated suite of scalable, secure and high-performance products.</p>
+  </div>
+  <svg class="about-hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C 240,60 480,0 720,30 C 960,60 1200,0 1440,30" fill="none" stroke="rgba(138,28,28,.15)" stroke-width="2"/>
+  </svg>
+</section>
+
+<!-- ========== TOOLBAR ========== -->
+<div class="container container-xl">
+  <div class="products-toolbar reveal reveal-delay-1">
+    <i class="bi bi-search"></i>
+    <input type="text" id="productSearch" placeholder="Search products...">
+    <select class="cat-select" id="productFilter">
+      <option value="all">Products</option>
+      <option value="sales">Sales &amp; CRM</option>
+      <option value="retail">Retail &amp; Billing</option>
+      <option value="workforce">Workforce &amp; HR</option>
+      <option value="services">Booking &amp; Services</option>
+      <option value="care">Education &amp; Care</option>
+    </select>
+  </div>
+</div>
+
+<!-- ========== PRODUCTS GRID ========== -->
+<section class="products-grid-section">
+  <div class="container container-xl">
+    <div class="row g-4" id="productsGrid">
+
+      <!-- WA CRM -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="wa crm customer relationship messaging whatsapp" data-cat="sales">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/wa.webp" alt="WA CRM" loading="lazy">
+          </div>
+          <h4>WA CRM</h4>
+          <div class="dt-tagline">Manage Relationships. Drive Sales. Grow Faster.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Customer relationship and messaging via WhatsApp</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Bulk Messaging</li>
+            <li><i class="bi bi-check-circle-fill"></i>Auto Replies</li>
+            <li><i class="bi bi-check-circle-fill"></i>Contact Management</li>
+            <li><i class="bi bi-check-circle-fill"></i>Broadcast Lists</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- CRM Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="crm software project task tracking" data-cat="sales">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/crm-software.webp" alt="CRM Software" loading="lazy">
+          </div>
+          <h4>CRM Software</h4>
+          <div class="dt-tagline">Manage Relationships. Drive Sales. Grow Faster.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Project and task tracking</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Task Assignment</li>
+            <li><i class="bi bi-check-circle-fill"></i>Progress Tracking</li>
+            <li><i class="bi bi-check-circle-fill"></i>Deadlines</li>
+            <li><i class="bi bi-check-circle-fill"></i>Collaboration</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Reselling & Stock -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="reselling stock management inventory" data-cat="retail">
+        <div class="dt-product-card reveal">
+          <span class="dt-popular-badge">Popular</span>
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/reselling.webp" alt="Reselling & Stock Management Software" loading="lazy">
+          </div>
+          <h4>Reselling &amp; Stock Management Software</h4>
+          <div class="dt-tagline">Smart Inventory. Seamless Reselling. Complete Control.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Inventory and order tracking</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Inventory Control</li>
+            <li><i class="bi bi-check-circle-fill"></i>Stock Alerts</li>
+            <li><i class="bi bi-check-circle-fill"></i>Order Processing</li>
+            <li><i class="bi bi-check-circle-fill"></i>Reports</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Recruitment Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="recruitment software hiring candidate" data-cat="workforce">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/recruiment.webp" alt="Recruitment Software" loading="lazy">
+          </div>
+          <h4>Recruitment Software</h4>
+          <div class="dt-tagline">Streamline Hiring. Find Talent Faster. Manage Everything.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Hiring pipelines and candidate tracking</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Job Posting</li>
+            <li><i class="bi bi-check-circle-fill"></i>Candidate Profiles</li>
+            <li><i class="bi bi-check-circle-fill"></i>Interview Scheduling</li>
+            <li><i class="bi bi-check-circle-fill"></i>Pipeline Stages</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Jewelry Selling App -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="jewelry selling app catalog checkout" data-cat="retail">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/jewelry.webp" alt="Jewelry Selling App" loading="lazy">
+          </div>
+          <h4>Jewelry Selling App</h4>
+          <div class="dt-tagline">Showcase. Sell. Shine Online.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Catalog and secure checkout</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Product Catalog</li>
+            <li><i class="bi bi-check-circle-fill"></i>Wishlist</li>
+            <li><i class="bi bi-check-circle-fill"></i>Secure Payments</li>
+            <li><i class="bi bi-check-circle-fill"></i>Order Tracking</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Diamond Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="diamond software inventory pricing stone" data-cat="retail">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/diamond.webp" alt="Diamond Software" loading="lazy">
+          </div>
+          <h4>Diamond Software</h4>
+          <div class="dt-tagline">Elevate. Manage. Maximize Brilliance.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Inventory and price management</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Stone Catalog</li>
+            <li><i class="bi bi-check-circle-fill"></i>Cert Uploads</li>
+            <li><i class="bi bi-check-circle-fill"></i>Pricing Rules</li>
+            <li><i class="bi bi-check-circle-fill"></i>Stock Ledger</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Tailor Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="tailor software measurements orders deliveries" data-cat="retail">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/tailor.webp" alt="Tailor Software" loading="lazy">
+          </div>
+          <h4>Tailor Software</h4>
+          <div class="dt-tagline">Measure. Create. Streamline Tailoring.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Measurements, orders, deliveries</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Measurements DB</li>
+            <li><i class="bi bi-check-circle-fill"></i>Order Tracking</li>
+            <li><i class="bi bi-check-circle-fill"></i>Delivery Scheduling</li>
+            <li><i class="bi bi-check-circle-fill"></i>Invoices</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Pharmacy Billing Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="pharmacy billing software pos inventory medicine" data-cat="care">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/pharmacy.webp" alt="Pharmacy Billing Software" loading="lazy">
+          </div>
+          <h4>Pharmacy Billing Software</h4>
+          <div class="dt-tagline">Manage. Track. Dispense Medicine.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">POS and inventory</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Prescription Billing</li>
+            <li><i class="bi bi-check-circle-fill"></i>Inventory Sync</li>
+            <li><i class="bi bi-check-circle-fill"></i>GST Invoices</li>
+            <li><i class="bi bi-check-circle-fill"></i>Expiry Alerts</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Booking Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="booking software bus hotel reservation" data-cat="services">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/booking.webp" alt="Booking Software (Bus & Hotel)" loading="lazy">
+          </div>
+          <h4>Booking Software (Bus &amp; Hotel)</h4>
+          <div class="dt-tagline">Search. Reserve. Travel Smarter.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Online bookings and schedules</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Seat Selection</li>
+            <li><i class="bi bi-check-circle-fill"></i>Room Availability</li>
+            <li><i class="bi bi-check-circle-fill"></i>Payments</li>
+            <li><i class="bi bi-check-circle-fill"></i>Itineraries</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- School Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="school software students fees exams" data-cat="care">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/school.webp" alt="School Software" loading="lazy">
+          </div>
+          <h4>School Software</h4>
+          <div class="dt-tagline">Manage. Educate. Empower Minds.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Students, fees, exams</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Student Profiles</li>
+            <li><i class="bi bi-check-circle-fill"></i>Fees &amp; Receipts</li>
+            <li><i class="bi bi-check-circle-fill"></i>Exam Results</li>
+            <li><i class="bi bi-check-circle-fill"></i>Attendance</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Payroll Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="payroll software salary compensation tax" data-cat="workforce">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/payroll.webp" alt="Payroll Software" loading="lazy">
+          </div>
+          <h4>Payroll Software</h4>
+          <div class="dt-tagline">Automate. Compensate. Comply Effortlessly.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Salary processing and compliance</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Salary Slips</li>
+            <li><i class="bi bi-check-circle-fill"></i>PF/ESI</li>
+            <li><i class="bi bi-check-circle-fill"></i>Tax Calc</li>
+            <li><i class="bi bi-check-circle-fill"></i>Attendance Import</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Insurance Management Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="insurance management software policy renewal premium" data-cat="services">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/insurance.webp" alt="Insurance Management Software" loading="lazy">
+          </div>
+          <h4>Insurance Management Software</h4>
+          <div class="dt-tagline">Protect. Manage. Claim with Confidence.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Policy, renewals, and analytics</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Policy Dashboard</li>
+            <li><i class="bi bi-check-circle-fill"></i>Renewal Reminders</li>
+            <li><i class="bi bi-check-circle-fill"></i>Premium Calculator</li>
+            <li><i class="bi bi-check-circle-fill"></i>Client Profiles</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Library Management Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="library management software cataloging books" data-cat="care">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/library.webp" alt="Library Management Software" loading="lazy">
+          </div>
+          <h4>Library Management Software</h4>
+          <div class="dt-tagline">Organize. Catalog. Access Knowledge.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Smart cataloging &amp; circulation</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Book Catalog</li>
+            <li><i class="bi bi-check-circle-fill"></i>Issue/Return</li>
+            <li><i class="bi bi-check-circle-fill"></i>Member Profiles</li>
+            <li><i class="bi bi-check-circle-fill"></i>Fines</li>
+          </ul>
+         
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Attendance Management Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="attendance management software shift biometric" data-cat="workforce">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/attend.webp" alt="Attendance Management Software" loading="lazy">
+          </div>
+          <h4>Attendance Management Software</h4>
+          <div class="dt-tagline">Track. Monitor. Simplify Time.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Employee attendance tracking</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Shift Scheduling</li>
+            <li><i class="bi bi-check-circle-fill"></i>Biometric Sync</li>
+            <li><i class="bi bi-check-circle-fill"></i>Leave Requests</li>
+            <li><i class="bi bi-check-circle-fill"></i>Reports</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Field Staff Tracking Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="field staff tracking software geo route productivity" data-cat="workforce">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/staff.webp" alt="Field Staff Tracking Software" loading="lazy">
+          </div>
+          <h4>Field Staff Tracking Software</h4>
+          <div class="dt-tagline">Track. Monitor. Optimize Workforce.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">Tracking &amp; productivity</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Geo Attendance</li>
+            <li><i class="bi bi-check-circle-fill"></i>Route Logs</li>
+            <li><i class="bi bi-check-circle-fill"></i>Task Assignment</li>
+            <li><i class="bi bi-check-circle-fill"></i>Timesheets</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+      <!-- Hospital Management Software -->
+      <div class="col-lg-4 col-md-6 product-item" data-title="hospital management software opd ipd patient" data-cat="care">
+        <div class="dt-product-card reveal">
+          <div class="dt-card-img-wrap">
+            <img src="assets/images/products/hospital.webp" alt="Hospital Management Software" loading="lazy">
+          </div>
+          <h4>Hospital Management Software</h4>
+          <div class="dt-tagline">Manage. Care. Heal. Seamlessly.</div>
+          <div class="dt-underline"></div>
+          <p class="dt-desc">OPD/IPD workflows</p>
+          <ul class="dt-feature-list">
+            <li><i class="bi bi-check-circle-fill"></i>Patient Records</li>
+            <li><i class="bi bi-check-circle-fill"></i>Billing</li>
+            <li><i class="bi bi-check-circle-fill"></i>Pharmacy</li>
+            <li><i class="bi bi-check-circle-fill"></i>Lab</li>
+          </ul>
+          <a href="contact.html">
+          <button class="dt-btn-magnetic">Know more <i class="bi bi-arrow-right"></i></button></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Empty state -->
+    <div class="products-empty" id="productsEmpty">
+      <i class="bi bi-search"></i>
+      No products match your search. Try a different keyword.
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<div class="container container-xl">
+  <div class="cta-banner reveal">
+    <div>
+      <span class="eyebrow">Anytime you can make request to us</span>
+      <h2>Everything You Need For<br>IT Services</h2>
+      <p class="section-sub" style="margin-left:0;">From consultation to implementation, we deliver reliable and scalable IT solutions tailored to your business needs.</p>
+    </div>
+    <a href="contact.html" class="btn-maroon">Get Quote <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer id="footer">
+  <div class="container container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/Digitalkslogo.webp" alt="Digitalks Techno logo"></a>
+        <p class="desc mt-3">Modern digital solutions for growing businesses. We turn ideas into digital reality.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Services</h6>
+        <a href="index.html#solutions">Web Development</a>
+        <a href="index.html#solutions">App Development</a>
+        <a href="index.html#solutions">UI / UX Design</a>
+        <a href="index.html#solutions">Digital Marketing</a>
+      </div>
+      <div class="col-lg-4">
+        <h6>Contact</h6>
+        <a href="tel:+919974470999"><i class="bi bi-telephone-fill me-2"></i>+91 9974 4470 99</a>
+        <a href="mailto:contact@digitalkstechno.com"><i class="bi bi-envelope-fill me-2"></i>contact@digitalkstechno.com</a>
+        <a href="#"><i class="bi bi-geo-alt-fill me-2"></i>C1, 2nd Floor, Adarsh Farsan Mart, Ganesh Colony, Baroda Prestige, Surat, Gujarat - 395006, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Digitalks Techno LLP. All rights reserved.</span>
+      <span><a href="#" class="d-inline">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" class="d-inline">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar glass effect on scroll
+const nav = document.querySelector('.navbar-custom');
+window.addEventListener('scroll', ()=>{
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+}, {passive:true});
+
+// Stagger reveal animations within the same row/grid
+document.querySelectorAll('.row').forEach(row=>{
+  const items = row.querySelectorAll(':scope > [class*="col-"] > .reveal, :scope > [class*="col-"].reveal');
+  items.forEach((el,i)=>{ el.style.transitionDelay = ((i % 3) * 90) + 'ms'; });
+});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold:.15});
+revealEls.forEach(el=>io.observe(el));
+
+// ---------- Product search + category filter ----------
+const searchInput = document.getElementById('productSearch');
+const catFilter = document.getElementById('productFilter');
+const items = Array.from(document.querySelectorAll('.product-item'));
+const emptyState = document.getElementById('productsEmpty');
+
+function filterProducts(){
+  const q = searchInput.value.trim().toLowerCase();
+  const cat = catFilter.value;
+  let visibleCount = 0;
+
+  items.forEach(item=>{
+    const matchesText = item.dataset.title.includes(q);
+    const matchesCat = (cat === 'all') || (item.dataset.cat === cat);
+    const show = matchesText && matchesCat;
+    item.style.display = show ? '' : 'none';
+    if(show) visibleCount++;
+  });
+
+  emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+searchInput.addEventListener('input', filterProducts);
+catFilter.addEventListener('change', filterProducts);
+
+// ---------- Signature tilt interaction on product cards ----------
+const tiltCards = document.querySelectorAll('.dt-product-card');
+const isTouch = window.matchMedia('(hover: none)').matches;
+
+if(!isTouch){
+  tiltCards.forEach(card=>{
+    card.addEventListener('mousemove', (e)=>{
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -4;
+      const rotateY = ((x - centerX) / centerX) * 4;
+      card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+    });
+    card.addEventListener('mouseleave', ()=>{
+      card.style.transform = '';
+    });
+  });
+}
+</script>
+</body>
+</html>

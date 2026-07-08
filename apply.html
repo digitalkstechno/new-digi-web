@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Job | Digitalks Techno</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- FontAwesome 6 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container container-xl">
+    <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/Digitalkslogo.webp" alt="Digitalks Techno logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav nav-links mx-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="solution.html">Solution</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link " href="ourproducts.html">Our Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="innovations.html">Our Innovations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="life_at_digitalks.html">Life at Digitalks</a></li>
+      </ul>
+    </div>
+     <a href="contact.html" class="btn-maroon d-none d-lg-inline-flex">Get Quote</a>
+  </div>
+</nav>
+
+<!-- ========== APPLY HERO ========== -->
+<section class="about-hero">
+  <div class="about-hero-dots"></div>
+  <div class="container container-xl text-center reveal reveal-1">
+    <span class="eyebrow">Apply</span>
+    <h1 class="about-hero-title">Start Your Journey</h1>
+    <p class="section-sub mx-auto" id="applyRoleText">You are applying for Backend Developer</p>
+  </div>
+  <svg class="about-hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C 240,60 480,0 720,30 C 960,60 1200,0 1440,30" fill="none" stroke="rgba(138,28,28,.15)" stroke-width="2"/>
+  </svg>
+</section>
+
+<!-- ========== APPLICATION FORM ========== -->
+<section class="apply-section">
+  <div class="container container-xl">
+    <div class="apply-card reveal">
+      <form id="applyForm" novalidate>
+        <div class="row g-5">
+
+          <!-- Personal Details -->
+          <div class="col-lg-6">
+            <div class="apply-col-head">
+              <h4>Personal Details</h4>
+              <p>Tell us a bit about yourself.</p>
+            </div>
+
+            <div class="apply-field">
+              <label>Full Name <span class="req">*</span></label>
+              <div class="apply-input-wrap">
+                <i class="bi bi-person-fill"></i>
+                <input type="text" name="fullName" placeholder="John Doe" required>
+              </div>
+            </div>
+
+            <div class="apply-field">
+              <label>Email Address <span class="req">*</span></label>
+              <div class="apply-input-wrap">
+                <i class="bi bi-envelope-fill"></i>
+                <input type="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="apply-field">
+              <label>Phone Number <span class="req">*</span></label>
+              <div class="apply-input-wrap">
+                <i class="bi bi-telephone-fill"></i>
+                <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <div class="apply-field">
+              <label>Years of Experience <span class="req">*</span></label>
+              <div class="apply-input-wrap">
+                <i class="bi bi-briefcase-fill"></i>
+                <input type="text" name="experience" placeholder="e.g. 2 Years" required>
+              </div>
+            </div>
+
+            <div class="apply-field mb-0">
+              <label>Position Applied For</label>
+              <div class="apply-input-wrap">
+                <i class="bi bi-briefcase-fill"></i>
+                <input type="text" name="position" id="positionField" value="Backend Developer" readonly>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume Upload -->
+          <div class="col-lg-6">
+            <div class="apply-col-head">
+              <h4>Resume Upload</h4>
+              <p>Show us what you've got.</p>
+            </div>
+
+            <label class="resume-drop" id="resumeDrop" for="resumeInput">
+              <input type="file" id="resumeInput" name="resume" accept=".pdf,.doc,.docx" hidden>
+
+              <div class="resume-drop-inner" id="resumeIdleState">
+                <span class="resume-icon"><i class="bi bi-cloud-arrow-up-fill"></i></span>
+                <strong>Click to Upload Resume</strong>
+                <span class="resume-hint">PDF, DOC, DOCX (Max 5MB)</span>
+                <span class="resume-chip">Drag &amp; Drop supported</span>
+              </div>
+
+              <div class="resume-drop-inner d-none" id="resumeFileState">
+                <span class="resume-icon resume-icon-ok"><i class="bi bi-file-earmark-check-fill"></i></span>
+                <strong id="resumeFileName">resume.pdf</strong>
+                <span class="resume-hint" id="resumeFileSize">0 KB</span>
+                <button type="button" class="resume-remove" id="resumeRemove"><i class="bi bi-x-lg"></i> Remove</button>
+              </div>
+            </label>
+            <p class="resume-error" id="resumeError"></p>
+          </div>
+
+        </div>
+
+        <hr class="apply-divider">
+
+        <button type="submit" class="btn-maroon w-100 justify-content-center">Submit Application <i class="bi bi-rocket-takeoff-fill"></i></button>
+        <p class="apply-disclaimer">By submitting this form, you agree to our privacy policy and terms of service.</p>
+      </form>
+
+      <!-- Success state -->
+      <div class="apply-success d-none" id="applySuccess">
+        <span class="apply-success-icon"><i class="bi bi-check-lg"></i></span>
+        <h4>Application Submitted!</h4>
+        <p>Thanks for applying — our team will review your profile and get back to you within a few business days.</p>
+        <a href="life_at_digitalks.html" class="btn-outline-soft">Back to Open Positions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========== FOOTER ========== -->
+<footer id="footer">
+  <div class="container container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/Digitalkslogo.webp" alt="Digitalks Techno logo"></a>
+        <p class="desc mt-3">Modern digital solutions for growing businesses. We turn ideas into digital reality.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Services</h6>
+        <a href="index.html#solutions">Web Development</a>
+        <a href="index.html#solutions">App Development</a>
+        <a href="index.html#solutions">UI / UX Design</a>
+        <a href="index.html#solutions">Digital Marketing</a>
+      </div>
+      <div class="col-lg-4">
+        <h6>Contact</h6>
+        <a href="tel:+919974470999"><i class="bi bi-telephone-fill me-2"></i>+91 9974 4470 99</a>
+        <a href="mailto:contact@digitalkstechno.com"><i class="bi bi-envelope-fill me-2"></i>contact@digitalkstechno.com</a>
+        <a href="#"><i class="bi bi-geo-alt-fill me-2"></i>C1, 2nd Floor, Adarsh Farsan Mart, Ganesh Colony, Baroda Prestige, Surat, Gujarat - 395006, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Digitalks Techno LLP. All rights reserved.</span>
+      <span><a href="#" class="d-inline">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" class="d-inline">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar glass effect on scroll
+const nav = document.querySelector('.navbar-custom');
+window.addEventListener('scroll', ()=>{
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+}, {passive:true});
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold:.12});
+revealEls.forEach(el=>io.observe(el));
+
+// ---------- Prefill role from URL (?role=UI/UX Designer) ----------
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const role = params.get('role');
+  if(role){
+    document.getElementById('applyRoleText').textContent = 'You are applying for ' + role;
+    document.getElementById('positionField').value = role;
+  }
+})();
+
+// ---------- Resume upload (click + drag & drop) ----------
+(function(){
+  const MAX_SIZE = 5 * 1024 * 1024; // 5MB
+  const ALLOWED_EXT = ['pdf','doc','docx'];
+
+  const dropArea   = document.getElementById('resumeDrop');
+  const input      = document.getElementById('resumeInput');
+  const idleState  = document.getElementById('resumeIdleState');
+  const fileState  = document.getElementById('resumeFileState');
+  const fileName   = document.getElementById('resumeFileName');
+  const fileSize   = document.getElementById('resumeFileSize');
+  const removeBtn  = document.getElementById('resumeRemove');
+  const errorEl    = document.getElementById('resumeError');
+
+  function formatSize(bytes){
+    if(bytes < 1024) return bytes + ' B';
+    if(bytes < 1024*1024) return (bytes/1024).toFixed(0) + ' KB';
+    return (bytes/(1024*1024)).toFixed(1) + ' MB';
+  }
+
+  function showError(msg){
+    errorEl.textContent = msg;
+    dropArea.classList.add('resume-invalid');
+  }
+
+  function clearError(){
+    errorEl.textContent = '';
+    dropArea.classList.remove('resume-invalid');
+  }
+
+  function handleFile(file){
+    clearError();
+    if(!file) return;
+
+    const ext = file.name.split('.').pop().toLowerCase();
+    if(!ALLOWED_EXT.includes(ext)){
+      showError('Please upload a PDF, DOC, or DOCX file.');
+      resetFile();
+      return;
+    }
+    if(file.size > MAX_SIZE){
+      showError('File is too large. Max size is 5MB.');
+      resetFile();
+      return;
+    }
+
+    fileName.textContent = file.name;
+    fileSize.textContent = formatSize(file.size);
+    idleState.classList.add('d-none');
+    fileState.classList.remove('d-none');
+    dropArea.classList.add('resume-has-file');
+  }
+
+  function resetFile(){
+    input.value = '';
+    idleState.classList.remove('d-none');
+    fileState.classList.add('d-none');
+    dropArea.classList.remove('resume-has-file');
+  }
+
+  input.addEventListener('change', ()=> handleFile(input.files[0]));
+
+  removeBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    e.stopPropagation();
+    resetFile();
+    clearError();
+  });
+
+  ['dragenter','dragover'].forEach(evt=>{
+    dropArea.addEventListener(evt, (e)=>{
+      e.preventDefault();
+      e.stopPropagation();
+      dropArea.classList.add('resume-dragging');
+    });
+  });
+
+  ['dragleave','drop'].forEach(evt=>{
+    dropArea.addEventListener(evt, (e)=>{
+      e.preventDefault();
+      e.stopPropagation();
+      dropArea.classList.remove('resume-dragging');
+    });
+  });
+
+  dropArea.addEventListener('drop', (e)=>{
+    const file = e.dataTransfer.files[0];
+    if(file){
+      input.files = e.dataTransfer.files;
+      handleFile(file);
+    }
+  });
+})();
+
+// ---------- Form submit ----------
+document.getElementById('applyForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  if(!this.checkValidity()){
+    this.reportValidity();
+    return;
+  }
+
+  const resumeInput = document.getElementById('resumeInput');
+  if(!resumeInput.files.length){
+    document.getElementById('resumeError').textContent = 'Please attach your resume before submitting.';
+    document.getElementById('resumeDrop').classList.add('resume-invalid');
+    document.getElementById('resumeDrop').scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+
+  // NOTE: wire this up to your backend / form service (e.g. fetch('/api/apply', {method:'POST', body: new FormData(this)}))
+  this.classList.add('d-none');
+  document.getElementById('applySuccess').classList.remove('d-none');
+});
+</script>
+</body>
+</html>
