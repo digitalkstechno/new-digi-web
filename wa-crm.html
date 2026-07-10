@@ -12,7 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.3">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.4">
 </head>
 <body class="wacrm-body">
 
@@ -330,7 +330,15 @@
           </div>
           
           <div class="wacrm-circle-branches">
-            <!-- connecting lines background graphic -->
+            <!-- SVG connecting lines from center to each step -->
+            <svg width="100%" height="100%" viewBox="0 0 520 520" preserveAspectRatio="none" style="position:absolute;inset:0;opacity:.35;">
+              <!-- Center is at 260,260. Steps approx: top=260,30 | right=460,155 | bottom-right=420,415 | bottom-left=100,415 | left=60,155 -->
+              <line x1="260" y1="260" x2="260" y2="55" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
+              <line x1="260" y1="260" x2="460" y2="175" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
+              <line x1="260" y1="260" x2="420" y2="425" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
+              <line x1="260" y1="260" x2="100" y2="425" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
+              <line x1="260" y1="260" x2="60" y2="175" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
+            </svg>
           </div>
           
           <div class="wacrm-use-case-step wacrm-step-1">
@@ -602,9 +610,9 @@ const io = new IntersectionObserver(entries=>{
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 // Preview tabs
-document.querySelectorAll('.preview-tab').forEach(tab=>{
+document.querySelectorAll('.wacrm-walkthrough-tab').forEach(tab=>{
   tab.addEventListener('click', ()=>{
-    document.querySelectorAll('.preview-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.wacrm-walkthrough-tab').forEach(t=>t.classList.remove('active'));
     tab.classList.add('active');
   });
 });
