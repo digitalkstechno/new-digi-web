@@ -20,6 +20,32 @@ function initNavbar() {
 
     // 2. Extract links from desktop navbar
     const navLinks = desktopNavbar.querySelectorAll('.nav-links .nav-link');
+    
+    // Determine active menu item based on current URL path
+    const currentPath = window.location.pathname;
+    const currentFilename = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        
+        if (href === '/' || href === 'index.html' || href === '') {
+            if (currentFilename === '' || currentFilename === 'index.html') {
+                link.classList.add('active');
+            }
+        } else {
+            if (currentFilename === href) {
+                link.classList.add('active');
+            }
+        }
+
+        // Immediately set active when clicked
+        link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
     let drawerLinksHtml = '';
     
     navLinks.forEach(link => {
@@ -114,6 +140,15 @@ function initNavbar() {
     if (overlay) {
         overlay.addEventListener('click', closeMenu);
     }
+
+    // Immediately set active state on drawer links when clicked
+    const drawerLinks = drawer.querySelectorAll('.mob-nav-links a');
+    drawerLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            drawerLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 }
 
 if (document.readyState === 'loading') {

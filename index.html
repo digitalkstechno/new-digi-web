@@ -8,10 +8,9 @@
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
+  <!-- favicon icon -->
+ <link rel="shortcut icon" href="assets/images/favicon-icon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon-icon.png" type="image/x-icon">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Icons -->
@@ -37,7 +36,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navMenu">
         <ul class="navbar-nav nav-links mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="solution.html">Solution</a></li>
           <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
@@ -61,7 +60,7 @@
           <p class="lead-text">We deliver <strong>enterprise software and web development</strong> powered by scalable
             cloud solutions that streamline operations and accelerate digital transformation, driving <strong>measurable
               business growth.</strong></p>
-          <a href="#contact" class="btn-maroon">Start Your Project <i class="bi bi-arrow-right"></i></a>
+          <a href="contact.html" class="btn-maroon">Start Your Project <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="col-lg-6 reveal position-relative">
           <div class="hero-illustration">
@@ -106,9 +105,14 @@
   <section class="py-5 my-4" id="about">
     <div class="container container-xl">
       <div class="row align-items-center g-5">
+         <div class="col-lg-6 reveal">
+          <div class="about-sketch">
+            <img src="assets/images/WhoweAre1.png" alt="Digitalks team collaborating on a project">
+          </div>
+        </div>
         <div class="col-lg-6 reveal">
           <span class="eyebrow">Who We Are</span>
-          <h2 class="section-title mb-3">Know More<br>About Us</h2>
+          <h2 class="section-title mb-3">Know More<span class="accent"><br>About Us</span></h2>
           <p class="text-secondary mb-4" style="max-width:480px;">We are Digitalks Techno LLP, a forward-thinking IT
             solutions provider transforming ideas into digital reality. Our team of experts specializes in delivering
             cutting-edge software, robust cloud infrastructure, and impactful digital strategies.</p>
@@ -117,13 +121,9 @@
             <li><i class="bi bi-check-circle-fill"></i> Enterprise-Grade Security</li>
             <li><i class="bi bi-check-circle-fill"></i> Scalable Cloud Architecture</li>
           </ul>
-          <a href="#" class="btn-maroon mt-2">Explore Our Story <i class="bi bi-arrow-right"></i></a>
+          <a href="aboutus.html" class="btn-maroon mt-2">Explore Our Story <i class="bi bi-arrow-right"></i></a>
         </div>
-        <div class="col-lg-6 reveal">
-          <div class="about-sketch">
-            <img src="assets/images/digitalks_About.png" alt="Digitalks team collaborating on a project">
-          </div>
-        </div>
+       
       </div>
     </div>
   </section>
@@ -134,7 +134,7 @@
   <!-- ========== SOLUTIONS ========== -->
   <section class="solutions-section" id="solutions">
     <div class="container container-xl">
-      <div class="text-center mb-5 reveal">
+      <div class="text-center mb-2 reveal">
         <h2 class="section-title">Comprehensive <span class="accent">Digital Solutions</span></h2>
         <p class="section-sub">From web development to digital marketing, we provide complete digital solutions to grow
           your business.</p>
@@ -243,7 +243,7 @@
   <!-- ========== PROJECTS ========== -->
   <section class="py-5 my-4" id="services">
     <div class="container container-xl">
-      <div class="text-center mb-5 reveal">
+      <div class="text-center mb-2 reveal">
         <h2 class="section-title">Our Latest <span class="accent">Projects</span></h2>
         <p class="section-sub">Discover how we've helped businesses transform and grow with our digital solutions.</p>
       </div>
@@ -394,13 +394,13 @@
       </div>
 
       <div class="text-center mt-5 reveal">
-        <a href="#" class="btn-outline-soft">View All Projects</a>
+        <a href="projects.html" class="btn-outline-soft">View All Projects</a>
       </div>
     </div>
   </section>
 
   <!-- ========== PRODUCTS ========== -->
-  <section class="py-5 my-4" id="products" style="background:var(--cream);">
+  <!-- <section class="py-5 my-4" id="products" style="background:var(--cream);">
     <div class="container container-xl py-4">
       <div class="text-center mb-5 reveal">
         <span class="eyebrow">Our Latest Products</span>
@@ -412,9 +412,9 @@
         <div class="col-lg-6 reveal">
           <div class="product-card">
             <div class="product-icons">
-              <!-- <span><i class="bi bi-calendar-check"></i></span>
+              <span><i class="bi bi-calendar-check"></i></span>
             <span><i class="bi bi-whatsapp"></i></span>
-            <span><i class="bi bi-diagram-3"></i></span> -->
+            <span><i class="bi bi-diagram-3"></i></span>
               <img src="assets/images/wa.webp" alt="WA CRM">
             </div>
             <h4>WA CRM</h4>
@@ -431,9 +431,9 @@
         <div class="col-lg-6 reveal">
           <div class="product-card">
             <div class="product-icons">
-              <!-- <span><i class="bi bi-kanban"></i></span>
+              <span><i class="bi bi-kanban"></i></span>
             <span><i class="bi bi-gear-wide-connected"></i></span>
-            <span><i class="bi bi-people"></i></span> -->
+            <span><i class="bi bi-people"></i></span>
               <img src="assets/images/wa.webp" alt="WA CRM">
             </div>
             <h4>CRM Software</h4>
@@ -449,70 +449,129 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ========== TESTIMONIALS ========== -->
-  <section class="py-5 my-4">
+  <section class="testimonial-section">
     <div class="container container-xl">
-      <div class="text-center mb-5 reveal">
+      <div class="text-center mb-2 reveal">
         <h2 class="section-title">Client Success <span class="accent">Stories</span></h2>
         <p class="section-sub">See how we help businesses transform and grow through digital innovation.</p>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-4 reveal">
-          <div class="testimonial-card">
-            <span class="quote-mark">&rdquo;</span>
-            <div class="d-flex align-items-center gap-3">
-              <img class="avatar" src="https://ui-avatars.com/api/?name=Jojm+Pratiti&background=8a1c1c&color=fff"
-                alt="Jojm Pratiti">
-              <div>
-                <h6 class="mb-0 fw-semibold">Jojm Pratiti</h6>
-                <small class="text-secondary">CEO, Pratiti Technologies</small>
+
+      <div id="testimonialsCarousel" class="carousel slide project-carousel reveal" data-bs-ride="carousel" data-bs-interval="4500">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://ui-avatars.com/api/?name=Jojm+Pratiti&background=8a1c1c&color=fff" alt="Jojm Pratiti">
+                    <div>
+                      <h6 class="mb-0 fw-semibold">Jojm Pratiti</h6>
+                      <small class="text-secondary">CEO, Pratiti Technologies</small>
+                    </div>
+                  </div>
+                  <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p class="quote">"Digitalks is our service provider for website and UI designing. Their team finished the project professionally and dedicatedly. We definitely recommend their services."</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://ui-avatars.com/api/?name=Arun+Kumar&background=e0932e&color=fff" alt="Arun Kumar">
+                    <div>
+                      <h6 class="mb-0 fw-semibold">Arun Kumar</h6>
+                      <small class="text-secondary">CEO, Arch Nordic</small>
+                    </div>
+                  </div>
+                  <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p class="quote">"The team completed our work professionally and satisfactorily, looking at timely delivery and support. We would gladly award their annual maintenance contract again."</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://ui-avatars.com/api/?name=Sachin+Deshmukh&background=222&color=fff" alt="Sachin Deshmukh">
+                    <div>
+                      <h6 class="mb-0 fw-semibold">Sachin Deshmukh</h6>
+                      <small class="text-secondary">Director, Atkos Pvt. Ltd.</small>
+                    </div>
+                  </div>
+                  <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div>
+                  <p class="quote">"Digitalks has been providing consulting services professionally. Their expert advice helped us with company digitization and directly contributed to our business growth."</p>
+                </div>
               </div>
             </div>
-            <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote">"Digitalks is our service provider for website and UI designing. Their team finished the
-              project professionally and dedicatedly. We definitely recommend their services."</p>
           </div>
-        </div>
-        <div class="col-lg-4 reveal">
-          <div class="testimonial-card">
-            <span class="quote-mark">&rdquo;</span>
-            <div class="d-flex align-items-center gap-3">
-              <img class="avatar" src="https://ui-avatars.com/api/?name=Arun+Kumar&background=e0932e&color=fff"
-                alt="Arun Kumar">
-              <div>
-                <h6 class="mb-0 fw-semibold">Arun Kumar</h6>
-                <small class="text-secondary">CEO, Arch Nordic</small>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://ui-avatars.com/api/?name=Priya+Sharma&background=0f766e&color=fff" alt="Priya Sharma">
+                    <div>
+                      <h6 class="mb-0 fw-semibold">Priya Sharma</h6>
+                      <small class="text-secondary">Founder, TechVantage Solutions</small>
+                    </div>
+                  </div>
+                  <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p class="quote">"Digitalks transformed our legacy application into a high-performing cloud platform. Their team's technical expertise and commitment to quality exceeded our expectations."</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://ui-avatars.com/api/?name=Mark+Sterling&background=1e3a8a&color=fff" alt="Mark Sterling">
+                    <div>
+                      <h6 class="mb-0 fw-semibold">Mark Sterling</h6>
+                      <small class="text-secondary">CTO, Innovate Labs</small>
+                    </div>
+                  </div>
+                  <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                  <p class="quote">"The digital transformation solutions provided by Digitalks helped us scale our operations globally. Their responsive communication and post-delivery support have been excellent."</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="testimonial-card">
+                  <span class="quote-mark">&rdquo;</span>
+                  <div class="d-flex align-items-center gap-3">
+                    <img class="avatar" src="https://ui-avatars.com/api/?name=Rajesh+Patel&background=6b21a8&color=fff" alt="Rajesh Patel">
+                    <div>
+                      <h6 class="mb-0 fw-semibold">Rajesh Patel</h6>
+                      <small class="text-secondary">Operations Director, Apex Industries</small>
+                    </div>
+                  </div>
+                  <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></div>
+                  <p class="quote">"Working with Digitalks was a game-changer for our workflow optimization. The custom ERP solution they built is intuitive, robust, and has significantly improved our efficiency."</p>
+                </div>
               </div>
             </div>
-            <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
-            <p class="quote">"The team completed our work professionally and satisfactorily, looking at timely delivery
-              and support. We would gladly award their annual maintenance contract again."</p>
           </div>
+
         </div>
-        <div class="col-lg-4 reveal">
-          <div class="testimonial-card">
-            <span class="quote-mark">&rdquo;</span>
-            <div class="d-flex align-items-center gap-3">
-              <img class="avatar" src="https://ui-avatars.com/api/?name=Sachin+Deshmukh&background=222&color=fff"
-                alt="Sachin Deshmukh">
-              <div>
-                <h6 class="mb-0 fw-semibold">Sachin Deshmukh</h6>
-                <small class="text-secondary">Director, Atkos Pvt. Ltd.</small>
-              </div>
-            </div>
-            <div class="stars mt-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i></div>
-            <p class="quote">"Digitalks has been providing consulting services professionally. Their expert advice
-              helped us with company digitization and directly contributed to our business growth."</p>
+
+        <div class="project-carousel-nav">
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" aria-label="Previous testimonials">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" aria-label="Next testimonials">
+            <i class="bi bi-arrow-right"></i>
+          </button>
         </div>
-      </div>
-      <div class="dot-nav">
-        <span class="active"></span><span></span><span></span>
       </div>
     </div>
   </section>
@@ -520,7 +579,7 @@
   <!-- ========== INDUSTRIES ========== -->
   <section class="py-5 my-4" id="industries">
     <div class="container container-xl">
-      <div class="text-center mb-5 reveal">
+      <div class="text-center mb-2 reveal">
         <h2 class="section-title">Industries We <span class="accent">Serve</span></h2>
         <p class="section-sub">Tailored digital experiences designed to accelerate growth across industries.</p>
       </div>
@@ -829,19 +888,6 @@
     }, { threshold: .5 });
     counters.forEach(el => counterIO.observe(el));
 
-    // Testimonial dot nav (simple cycle highlight, purely decorative interaction)
-    const dots = document.querySelectorAll('.dot-nav span');
-    let dotIndex = 0;
-    setInterval(() => {
-      dots.forEach(d => d.classList.remove('active'));
-      dotIndex = (dotIndex + 1) % dots.length;
-      dots[dotIndex].classList.add('active');
-    }, 3500);
-    dots.forEach((d, i) => d.addEventListener('click', () => {
-      dots.forEach(x => x.classList.remove('active'));
-      d.classList.add('active');
-      dotIndex = i;
-    }));
   </script>
 </body>
 
