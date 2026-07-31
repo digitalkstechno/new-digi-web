@@ -1945,20 +1945,17 @@ footer .foot-copy {
   height: 45px;
   filter: none;
 }
-
 .footer-heading-dark {
   color: #1f2937;
   font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-
 .footer-about-text {
   color: #475569;
   font-size: 0.95rem;
   line-height: 1.6;
 }
-
 .newsletter-inline {
   display: flex;
   align-items: center;
@@ -1966,7 +1963,6 @@ footer .foot-copy {
   padding-bottom: 10px;
   margin-top: 15px;
 }
-
 .newsletter-inline input {
   border: none;
   background: transparent;
@@ -1998,7 +1994,6 @@ footer .foot-copy {
   border-color: #cbd5e1;
   opacity: 1;
 }
-
 .footer-col-title {
   color: #0f172a;
   font-weight: 700;
@@ -2019,7 +2014,6 @@ footer .foot-copy {
   gap: 8px;
   transition: color 0.2s ease;
 }
-
 .footer-links a i {
   font-size: 0.7rem;
   font-weight: bold;
@@ -2035,12 +2029,10 @@ footer .foot-copy {
   color: var(--indigo);
   transform: translateX(3px);
 }
-
 .footer-social-circles {
   display: flex;
   gap: 12px;
 }
-
 .footer-social-circles a {
   display: inline-flex;
   align-items: center;
@@ -2055,7 +2047,6 @@ footer .foot-copy {
   transition: all 0.3s ease;
   text-decoration: none;
 }
-
 .footer-social-circles a:hover {
   background: var(--indigo);
   border-color: var(--indigo);
@@ -2063,7 +2054,6 @@ footer .foot-copy {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
 }
-
 .footer-giant-text {
   font-size: 200px;
   font-weight: 900;
@@ -2094,19 +2084,16 @@ footer .foot-copy {
   z-index: 0;
   opacity: 0.3;
 }
-
 .ds-blob-1 {
   top: -100px;
   left: -100px;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
 }
-
 .ds-blob-2 {
   bottom: -100px;
   right: -100px;
   background: linear-gradient(135deg, #10b981, #3b82f6);
 }
-
 .ds-badge {
   background: rgba(139, 92, 246, 0.1);
   color: #7c3aed;
@@ -2118,14 +2105,12 @@ footer .foot-copy {
   display: inline-block;
   text-transform: uppercase;
 }
-
 .text-gradient {
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-
 .ds-card {
   background: #ffffff;
   border-radius: 16px;
@@ -2136,7 +2121,6 @@ footer .foot-copy {
   overflow: hidden;
   z-index: 1;
 }
-
 .ds-card::before {
   content: '';
   position: absolute;
@@ -2149,7 +2133,6 @@ footer .foot-copy {
   transition: opacity 0.4s ease;
   z-index: -1;
 }
-
 .ds-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
@@ -2173,7 +2156,6 @@ footer .foot-copy {
   font-size: 1.5rem;
   box-shadow: 0 8px 16px hsla(var(--ds-hue), 80%, 50%, 0.3);
 }
-
 .ds-card-line {
   width: 40px;
   height: 3px;
@@ -2225,7 +2207,6 @@ footer .foot-copy {
   position: relative;
   perspective: 1000px;
 }
-
 .orbit-ring {
   position: absolute;
   border-radius: 50%;
@@ -2236,28 +2217,24 @@ footer .foot-copy {
   align-items: center;
   justify-content: center;
 }
-
 .outer-ring {
   width: 420px;
   height: 420px;
   border: 2px dashed #93c5fd;
   animation: spinRight 40s linear infinite;
 }
-
 .middle-ring {
   width: 290px;
   height: 290px;
   border: 2px solid #bfdbfe;
   animation: spinLeft 25s linear infinite;
 }
-
 .inner-ring {
   width: 160px;
   height: 160px;
   border: 2px solid #e0f2fe;
   animation: spinRight 15s linear infinite;
 }
-
 /* Unique Center Badge */
 .center-badge-unique {
   position: absolute;
@@ -2274,7 +2251,6 @@ footer .foot-copy {
   box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5);
   animation: pulseBadgeUnique 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
-
 .center-badge-unique::before {
   content: '';
   position: absolute;
@@ -2287,7 +2263,6 @@ footer .foot-copy {
   z-index: -1;
   animation: spinRightBadge 3s linear infinite;
 }
-
 .center-badge-unique::after {
   content: '';
   position: absolute;
@@ -2299,7 +2274,6 @@ footer .foot-copy {
   background: white;
   z-index: -1;
 }
-
 .cb-text {
   font-size: 52px;
   font-family: 'Inter', sans-serif;
@@ -2310,7 +2284,6 @@ footer .foot-copy {
   color: transparent;
   line-height: 1;
 }
-
 @keyframes pulseBadgeUnique {
   to {
     box-shadow: 0 0 0 25px rgba(59, 130, 246, 0);
@@ -2384,7 +2357,6 @@ footer .foot-copy {
   border-radius: 50%;
   font-size: 1.5rem;
 }
-
 .icon-hand {
   top: -15px;
   left: 20%;
@@ -2397,7 +2369,6 @@ footer .foot-copy {
   background-color: #ffffff;
   animation: counterSpinRight 40s linear infinite, floatIcon 3s ease-in-out infinite;
 }
-
 .icon-sparkle {
   bottom: -15px;
   right: 25%;
