@@ -18,20 +18,50 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar navbar-expand-lg">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="#">
-        <img src="assets/images/digitalks_logo.png" width="180px" height="auto" /></a>
-      <div class="d-none d-lg-flex align-items-center">
-        <a class="nav-link active" href="/">Home</a>
-        <a class="nav-link" href="aboutus.html">About</a>
-        <a class="nav-link" href="#solution">Solution</a>
-        <a class="nav-link" href="#services">Services</a>
-        <a class="nav-link" href="#ourproducts">Our Products</a>
-        <a class="nav-link" href="#innovations">Our Innovations</a>
-        <a class="nav-link" href="#lifedigitalks">Life at Digitalks</a>
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/digitalks_logo.png" width="180px" height="auto" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+        <ul class="navbar-nav align-items-center gap-2 mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company <i class="bi bi-chevron-down ms-1" style="font-size: 0.8rem; font-weight: bold;"></i>
+            </a>
+            <div class="dropdown-menu mega-menu-box shadow-lg border-0" aria-labelledby="companyDropdown">
+              <div class="d-flex flex-column gap-2 p-1">
+                <a href="aboutus.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                  <div class="mega-icon-box bg-light-purple">
+                    <i class="bi bi-building"></i>
+                  </div>
+                  <span class="mega-text text-dark fw-bold ms-3">About Us</span>
+                </a>
+                <a href="ourProtfolio.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                  <div class="mega-icon-box bg-light-green">
+                    <i class="bi bi-lightbulb"></i>
+                  </div>
+                  <span class="mega-text text-dark fw-bold ms-3">Our Portfolio</span>
+                </a>
+                <a href="case-study.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                  <div class="mega-icon-box bg-light-blue">
+                    <i class="bi bi-journal-text"></i>
+                  </div>
+                  <span class="mega-text text-dark fw-bold ms-3">Case Studies</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ourproducts">Our Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lifedigitalks">Life at Digitalks</a></li>
+        </ul>
+        <a href="#contact" class="btn-grad mt-3 mt-lg-0 text-center">Get a quote</a>
       </div>
-      <a href="#contact" class="btn-grad" style="padding:11px 24px;font-size:0.88rem;">Get a quote</a>
     </div>
   </nav>
 
@@ -72,7 +102,8 @@
           <span class="badge-pill"><i class="bi bi-shield-check"></i> DIGITAL ENGINEERING PARTNER</span>
           <h1>Transform Your Business Built on <span class="grad-text">Enterprise Software Cloud</span> and Growth.
           </h1>
-          <p class="lead-copy">We deliver enterprise software and web development powered by scalable cloud solutions that streamline operations and accelerate digital transformation, driving measurable business growth.</p>
+          <p class="lead-copy">We deliver enterprise software and web development powered by scalable cloud solutions
+            that streamline operations and accelerate digital transformation, driving measurable business growth.</p>
           <div class="d-flex flex-wrap gap-3">
             <a href="#contact" class="btn-grad">Start your project <i class="bi bi-arrow-right"></i></a>
             <a href="#work" class="btn-ghost">See our work</a>
@@ -203,7 +234,9 @@
               Know More <span class="grad-text">About Us</span>
             </h2>
             <p class="text-muted mb-5" style="font-size: 1.15rem; line-height: 1.7;">
-              We are Digitalks Techno LLP, a forward-thinking IT solutions provider transforming ideas into digital reality. Our team of experts specializes in delivering cutting-edge software, robust cloud infrastructure, and impactful digital strategies.
+              We are Digitalks Techno LLP, a forward-thinking IT solutions provider transforming ideas into digital
+              reality. Our team of experts specializes in delivering cutting-edge software, robust cloud infrastructure,
+              and impactful digital strategies.
             </p>
 
             <div class="row g-4 mb-5">
@@ -227,8 +260,7 @@
               </div>
             </div>
 
-            <a href="#about" class="btn-grad px-5 py-3 rounded-pill fw-bold d-inline-flex align-items-center gap-2"
-              style="font-size: 1.05rem;">
+            <a href="#about" class="btn-grad">
               Explore Our Story <i class="bi bi-arrow-right fs-5"></i>
             </a>
           </div>
@@ -631,7 +663,9 @@
                 <div class="col-lg-6-text">
                   <p class="sub-title">Industries</p>
                   <h2 class="section-title">Financial Services</h2>
-                  <p class="section-description">Creating secure, compliant, and scalable digital solutions for the financial sector. Our platforms support transactions, wealth management, and seamless banking experiences ensuring top-tier security and performance.</p>
+                  <p class="section-description">Creating secure, compliant, and scalable digital solutions for the
+                    financial sector. Our platforms support transactions, wealth management, and seamless banking
+                    experiences ensuring top-tier security and performance.</p>
                   <p class="sub-title2">Key Financial Solutions We Deliver</p>
                   <ul class="solutions-list">
                     <li>
@@ -757,7 +791,9 @@
                 <div class="col-lg-6-text">
                   <p class="sub-title">Industries</p>
                   <h2 class="section-title">E-commerce & Retail</h2>
-                  <p class="section-description">We build smart, user-focused digital solutions for retail and e-commerce. Our platforms support robust inventory management, seamless checkout, and data-driven insights to boost sales and customer engagement.</p>
+                  <p class="section-description">We build smart, user-focused digital solutions for retail and
+                    e-commerce. Our platforms support robust inventory management, seamless checkout, and data-driven
+                    insights to boost sales and customer engagement.</p>
                   <p class="sub-title2">Key E-commerce Solutions We Deliver</p>
                   <ul class="solutions-list">
                     <li>
@@ -954,6 +990,57 @@
       </div>
 
       <div class="row justify-content-center g-0" style="row-gap: 24px;">
+        <!-- Masterpiece Card 0: 3D Art & Animations Design -->
+        <!-- <div class="col-lg-12 stack-card" style="z-index: 0; margin-bottom: 50vh;">
+          <div class="masterpiece-card"
+            style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
+            <div class="row g-0 h-100">
+              <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
+                <img
+                  src="assets/images/digitalks_logo.png"
+                  alt="3D Art & Animations Design" class="app-icon-img"
+                  style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
+                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">3D Art & Animations Design</h3>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">We create realistic 3D art and animations for games, apps, marketing, and digital products. Our detailed models, textures, and animations enhance engagement and brand presence.</p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge"
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">3D Design</span>
+                  <span class="badge"
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Animation Services</span>
+                  <span class="badge"
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Digital Creative</span>
+                </div>
+
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
+                </div>
+
+                <hr style="opacity: 0.1; margin: auto 0 24px 0;">
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">98%</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Overall Growth Rate</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">5.0<i class="bi bi-star-fill ms-1" style="font-size: 1.2rem;"></i></h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Client Rating</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">800+</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Projects Delivered</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <div
+                  style="border-radius: 24px; overflow: hidden; background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
         <!-- Masterpiece Card 1: Zegoom -->
         <div class="col-lg-12 stack-card" style="z-index: 1; margin-bottom: 50vh;">
@@ -961,27 +1048,19 @@
             style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
             <div class="row g-0 h-100">
               <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
-                <img
-                  src="assets/images/digitalks_logo.png"
-                  alt="Zegoom" class="app-icon-img"
+                <img src="assets/images/digitalks_logo.png" alt="Global Payment Gateway" class="app-icon-img"
                   style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
                 <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Zegoom</h3>
-                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Curated collection of premium sarees for every occasion. Seamless and user-friendly e-commerce experience. Perfect blend of tradition and modern style.</p>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Secure and
+                  scalable infrastructure for cross-border transactions.</p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span class="badge"
-                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">E-Commerce</span>
-                  <span class="badge"
-                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Saree Collection</span>
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">FinTech</span>
                 </div>
 
-                <div class="d-flex gap-3 mb-4">
-                  <a href="#"><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-                      alt="App Store" style="height: 40px;"></a>
-                  <a href="#"><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                      alt="Google Play" style="height: 40px;"></a>
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
                 </div>
 
                 <hr style="opacity: 0.1; margin: auto 0 24px 0;">
@@ -989,131 +1068,260 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
                     <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">10K+</h4>
-                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Happy Customers</span>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Users</span>
                   </div>
                   <div>
                     <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.8/5</h4>
                     <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Rating</span>
                   </div>
                   <div>
-                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">50+</h4>
-                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Collections</span>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">24/7</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Support</span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 d-none d-md-block">
                 <div
-                  style="border-radius: 24px; overflow: hidden; background-image: url('https://images.unsplash.com/photo-1610030469983-98e550d61dc0?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                  style="border-radius: 24px; overflow: hidden; background-image: url('assets/images/case-study-1.png'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Masterpiece Card 2: Dotivala Bakery & Confectioners -->
+        <!-- Masterpiece Card 2: Dotivala -->
         <div class="col-lg-12 stack-card" style="z-index: 2; margin-bottom: 50vh;">
           <div class="masterpiece-card"
             style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
             <div class="row g-0 h-100">
               <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
-                <img
-                  src="assets/images/digitalks_logo.png"
-                  alt="Dotivala Bakery" class="app-icon-img"
+                <img src="assets/images/digitalks_logo.png" alt="Dotivala" class="app-icon-img"
                   style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
-                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Dotivala Bakery & Confectioners</h3>
-                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Traditional and creative bakery products. Freshly baked cakes, pastries, and sweets. Perfect treats for every special occasion.</p>
+                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Dotivala
+                </h3>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Boosting
+                  conversion rates by 40% with a seamless UX.</p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span class="badge"
                     style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">E-Commerce</span>
-                  <span class="badge"
-                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Bakery</span>
                 </div>
 
-                <div class="d-flex gap-3 mb-4">
-                  <a href="#"><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-                      alt="App Store" style="height: 40px;"></a>
-                  <a href="#"><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                      alt="Google Play" style="height: 40px;"></a>
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
                 </div>
 
                 <hr style="opacity: 0.1; margin: auto 0 24px 0;">
 
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
-                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">1M+</h4>
-                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Orders</span>
+                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">10K+</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Users</span>
                   </div>
                   <div>
-                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.9/5</h4>
+                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.8/5</h4>
                     <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Rating</span>
                   </div>
                   <div>
-                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">200+</h4>
-                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Products</span>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">24/7</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Support</span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 d-none d-md-block">
                 <div
-                  style="border-radius: 24px; overflow: hidden; background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                  style="border-radius: 24px; overflow: hidden; background-image: url('assets/images/case-study-2.png'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Masterpiece Card 3: Book My Assignment -->
-        <div class="col-lg-12 stack-card" style="z-index: 3;">
+        <!-- Masterpiece Card 3: Book My Assigment -->
+        <div class="col-lg-12 stack-card" style="z-index: 3; margin-bottom: 50vh;">
           <div class="masterpiece-card"
             style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
             <div class="row g-0 h-100">
               <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
-                <img
-                  src="assets/images/digitalks_logo.png"
-                  alt="Book My Assignment" class="app-icon-img"
+                <img src="assets/images/digitalks_logo.png" alt="Book My Assigment" class="app-icon-img"
                   style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
-                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Book My Assignment</h3>
-                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Quick access to textbooks, notes, and study materials. Educational software and website solutions. Easy and efficient learning platform.</p>
+                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Book My Assigment
+                </h3>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Connecting
+                  thousands of patients with doctors in real-time.</p>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span class="badge"
-                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Education</span>
-                  <span class="badge"
-                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">EdTech</span>
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Healthcare</span>
                 </div>
 
-                <div class="d-flex gap-3 mb-4">
-                  <a href="#"><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-                      alt="App Store" style="height: 40px;"></a>
-                  <a href="#"><img
-                      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                      alt="Google Play" style="height: 40px;"></a>
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
                 </div>
 
                 <hr style="opacity: 0.1; margin: auto 0 24px 0;">
 
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
-                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">500K+</h4>
-                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Students</span>
+                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">10K+</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Users</span>
                   </div>
                   <div>
-                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.7/5</h4>
+                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.8/5</h4>
                     <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Rating</span>
                   </div>
                   <div>
-                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">50+</h4>
-                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Courses</span>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">24/7</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Support</span>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 d-none d-md-block">
                 <div
-                  style="border-radius: 24px; overflow: hidden; background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                  style="border-radius: 24px; overflow: hidden; background-image: url('assets/images/case-study-3.png'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Masterpiece Card 4: Zibrish Rooftop -->
+        <div class="col-lg-12 stack-card" style="z-index: 4; margin-bottom: 50vh;">
+          <div class="masterpiece-card"
+            style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
+            <div class="row g-0 h-100">
+              <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
+                <img src="assets/images/digitalks_logo.png" alt="Zibrish Rooftop" class="app-icon-img"
+                  style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
+                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Zibrish Rooftop</h3>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">AI-driven routing
+                  and real-time tracking system.</p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge"
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Logistics</span>
+                </div>
+
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
+                </div>
+
+                <hr style="opacity: 0.1; margin: auto 0 24px 0;">
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">10K+</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Users</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.8/5</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Rating</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">24/7</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Support</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <div
+                  style="border-radius: 24px; overflow: hidden; background-image: url('assets/images/case-study-4.png'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Masterpiece Card 5: Sakshi -->
+        <div class="col-lg-12 stack-card" style="z-index: 5; margin-bottom: 50vh;">
+          <div class="masterpiece-card"
+            style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
+            <div class="row g-0 h-100">
+              <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
+                <img src="assets/images/digitalks_logo.png" alt="Sakshi" class="app-icon-img"
+                  style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
+                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">Sakshi
+                </h3>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Immersive virtual
+                  tours and instant property valuations.</p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge"
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Real
+                    Estate</span>
+                </div>
+
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
+                </div>
+
+                <hr style="opacity: 0.1; margin: auto 0 24px 0;">
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">10K+</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Users</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.8/5</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Rating</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">24/7</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Support</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <div
+                  style="border-radius: 24px; overflow: hidden; background-image: url('assets/images/case-study-5.png'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Masterpiece Card 6: PP Maniya Hospital -->
+        <div class="col-lg-12 stack-card" style="z-index: 6;">
+          <div class="masterpiece-card"
+            style="background: #fff; border: 2px solid #06b6d4; border-radius: 16px; padding: 24px; box-shadow: 0 20px 50px -20px rgba(6, 182, 212, 0.15);">
+            <div class="row g-0 h-100">
+              <div class="col-md-6 d-flex flex-column pe-md-5" style="padding: 24px 12px;">
+                <img src="assets/images/digitalks_logo.png" alt="PP Maniya Hospital" class="app-icon-img"
+                  style="width: 80px; height: 80px; border-radius: 20px; object-fit: contain; box-shadow: 0 8px 16px rgba(0,0,0,0.1); background: #f8fafc; padding: 10px;">
+                <h3 class="mt-4 mb-3" style="font-size: 2.2rem; font-weight: 700; color: #1e293b;">PP Maniya Hospitalg</h3>
+                <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Gamified learning
+                  management system for enterprise training.</p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge"
+                    style="background: #e0f2fe; color: #0284c7; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 0.85rem;">Education</span>
+                </div>
+
+                <div class="mb-4">
+                  <a href="#" class="btn rounded-pill px-4 py-2 fw-medium" style="color: #0ea5e9; border: 1px solid #0ea5e9; font-size: 0.95rem;">View Project</a>
+                </div>
+
+                <hr style="opacity: 0.1; margin: auto 0 24px 0;">
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h4 style="color: #22c55e; font-size: 1.8rem; font-weight: 800; margin: 0;">10K+</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Users</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #3b82f6; font-size: 1.8rem; font-weight: 800; margin: 0;">4.8/5</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Rating</span>
+                  </div>
+                  <div>
+                    <h4 style="color: #f59e0b; font-size: 1.8rem; font-weight: 800; margin: 0;">24/7</h4>
+                    <span style="font-size: 0.85rem; font-weight: 600; color: #1e293b;">Support</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-none d-md-block">
+                <div
+                  style="border-radius: 24px; overflow: hidden; background-image: url('assets/images/case-study-6.png'); background-size: cover; background-position: center; height: 100%; min-height: 500px;">
                 </div>
               </div>
             </div>
@@ -1132,33 +1340,45 @@
       </div>
       <div class="row g-4">
         <div class="col-md-6 reveal">
-          <div class="card h-100 border-0 shadow-sm hover-elevate rounded-4 overflow-hidden" style="background: #f8fafc; transition: all 0.3s ease;">
+          <div class="card h-100 border-0 shadow-sm hover-elevate rounded-4 overflow-hidden"
+            style="background: #f8fafc; transition: all 0.3s ease;">
             <div class="card-body p-4 p-lg-5 text-center">
               <div class="mb-4 d-inline-block rounded-circle" style="background: #e0f2fe; padding: 20px;">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                    stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
               <h3 class="fw-bold mb-3" style="color: #1e293b;">WA CRM</h3>
-              <p class="text-muted mb-4" style="line-height: 1.6;">Boost your WhatsApp messaging strategy with Bulk Broadcast messaging software. Designed to elevate lead generation and streamline mass communication effortlessly.</p>
-              <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Explore WA CRM</a>
+              <p class="text-muted mb-4" style="line-height: 1.6;">Boost your WhatsApp messaging strategy with Bulk
+                Broadcast messaging software. Designed to elevate lead generation and streamline mass communication
+                effortlessly.</p>
+              <a href="#" class="btn-grad">Explore WA CRM</a>
             </div>
           </div>
         </div>
         <div class="col-md-6 reveal">
-          <div class="card h-100 border-0 shadow-sm hover-elevate rounded-4 overflow-hidden" style="background: #f8fafc; transition: all 0.3s ease;">
+          <div class="card h-100 border-0 shadow-sm hover-elevate rounded-4 overflow-hidden"
+            style="background: #f8fafc; transition: all 0.3s ease;">
             <div class="card-body p-4 p-lg-5 text-center">
               <div class="mb-4 d-inline-block rounded-circle" style="background: #e0f2fe; padding: 20px;">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="9" cy="7" r="4" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#0ea5e9" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="9" cy="7" r="4" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </div>
               <h3 class="fw-bold mb-3" style="color: #1e293b;">CRM Software</h3>
-              <p class="text-muted mb-4" style="line-height: 1.6;">Build lasting customer relationships with our intuitive CRM platform. Simplify complex workflows, manage sales pipelines, and deliver personalized experiences that drive sustainable growth.</p>
-              <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold">Explore CRM</a>
+              <p class="text-muted mb-4" style="line-height: 1.6;">Build lasting customer relationships with our
+                intuitive CRM platform. Simplify complex workflows, manage sales pipelines, and deliver personalized
+                experiences that drive sustainable growth.</p>
+              <a href="#" class="btn-grad">Explore CRM</a>
             </div>
           </div>
         </div>
@@ -1195,7 +1415,9 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
               </div>
-              <p class="test-quote">"Coinage Inc. is our service provider for Website and UI designing. Team of Coinage has finished professionally and dedicatedly. We definitely recommend the service provided by Coinage."</p>
+              <p class="test-quote">"Coinage Inc. is our service provider for Website and UI designing. Team of Coinage
+                has finished professionally and dedicatedly. We definitely recommend the service provided by Coinage."
+              </p>
             </div>
 
             <!-- Item 2 -->
@@ -1215,7 +1437,9 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
               </div>
-              <p class="test-quote">"Team of Coinage has completed the work professionally and satisfactorily. Looking at their timely delivery and support, Arch also awarded the Annual Maintenance contract to Coinage Inc."</p>
+              <p class="test-quote">"Team of Coinage has completed the work professionally and satisfactorily. Looking
+                at their timely delivery and support, Arch also awarded the Annual Maintenance contract to Coinage Inc."
+              </p>
             </div>
 
             <!-- Item 3 -->
@@ -1235,7 +1459,8 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
               </div>
-              <p class="test-quote">"Coinage has been providing consulting services professionally. Their expert advice helped us in company digitization and directly contributed to our business growth."</p>
+              <p class="test-quote">"Coinage has been providing consulting services professionally. Their expert advice
+                helped us in company digitization and directly contributed to our business growth."</p>
             </div>
 
             <!-- Item 4 -->
@@ -1255,7 +1480,8 @@
                     class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
               </div>
-              <p class="test-quote">"Exceptional technical expertise. They transformed our legacy system into a modern cloud-native architecture seamlessly."</p>
+              <p class="test-quote">"Exceptional technical expertise. They transformed our legacy system into a modern
+                cloud-native architecture seamlessly."</p>
             </div>
           </div>
 
@@ -1563,7 +1789,8 @@
           <p class="sub-title">Insights & Articles</p>
           <h2 class="section-title">Latest from <span class="grad-text">Digitalk</span></h2>
         </div>
-        <a href="#" class="btn btn-outline-primary d-none d-md-inline-flex align-items-center gap-2" style="border-radius: 50px;">
+        <a href="#" class="btn btn-outline-primary d-none d-md-inline-flex align-items-center gap-2"
+          style="border-radius: 50px;">
           View All <i class="bi bi-arrow-right"></i>
         </a>
       </div>
@@ -1573,29 +1800,33 @@
         <div class="col-lg-4 col-md-6">
           <div class="blog-card">
             <div class="blog-img-wrapper">
-              <img src="assets/images/blog_ai_tech.png" alt="AI Technology" class="blog-img-placeholder" style="object-fit: cover;">
+              <img src="assets/images/blog_ai_tech.png" alt="AI Technology" class="blog-img-placeholder"
+                style="object-fit: cover;">
               <span class="blog-category">Technology</span>
             </div>
             <div class="blog-content">
               <div class="blog-meta">Oct 24, 2026 • 5 min read</div>
               <h3 class="blog-title">The Future of AI in Enterprise Software</h3>
-              <p class="blog-excerpt">Discover how generative AI is reshaping the way large organizations manage data and automate complex workflows.</p>
+              <p class="blog-excerpt">Discover how generative AI is reshaping the way large organizations manage data
+                and automate complex workflows.</p>
               <a href="#" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-        
+
         <!-- Blog Card 2 -->
         <div class="col-lg-4 col-md-6">
           <div class="blog-card">
             <div class="blog-img-wrapper">
-              <img src="assets/images/blog_design.png" alt="UI UX Design" class="blog-img-placeholder" style="object-fit: cover;">
+              <img src="assets/images/blog_design.png" alt="UI UX Design" class="blog-img-placeholder"
+                style="object-fit: cover;">
               <span class="blog-category">Design</span>
             </div>
             <div class="blog-content">
               <div class="blog-meta">Oct 18, 2026 • 4 min read</div>
               <h3 class="blog-title">Building Intuitive User Interfaces in 2027</h3>
-              <p class="blog-excerpt">A deep dive into the latest UI/UX trends focusing on glassmorphism, micro-interactions, and accessibility.</p>
+              <p class="blog-excerpt">A deep dive into the latest UI/UX trends focusing on glassmorphism,
+                micro-interactions, and accessibility.</p>
               <a href="#" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -1605,21 +1836,23 @@
         <div class="col-lg-4 col-md-6">
           <div class="blog-card">
             <div class="blog-img-wrapper">
-              <img src="assets/images/blog_cloud.png" alt="Cloud Infrastructure" class="blog-img-placeholder" style="object-fit: cover;">
+              <img src="assets/images/blog_cloud.png" alt="Cloud Infrastructure" class="blog-img-placeholder"
+                style="object-fit: cover;">
               <span class="blog-category">Business</span>
             </div>
             <div class="blog-content">
               <div class="blog-meta">Oct 12, 2026 • 6 min read</div>
               <h3 class="blog-title">Scaling Your Cloud Infrastructure</h3>
-              <p class="blog-excerpt">Key strategies for startups and SMEs to migrate to the cloud efficiently while keeping server costs low.</p>
+              <p class="blog-excerpt">Key strategies for startups and SMEs to migrate to the cloud efficiently while
+                keeping server costs low.</p>
               <a href="#" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="mt-4 text-center d-md-none">
-        <a href="#" class="btn btn-outline-primary" style="border-radius: 50px; width: 100%;">View All Blogs</a>
+        <a href="#" class="btn-grad w-100 justify-content-center">View All Blogs</a>
       </div>
     </div>
   </section>
@@ -1633,7 +1866,8 @@
       <div class="text-center mb-5 reveal">
         <span class="ds-badge">WHAT WE DO</span>
         <h2 class="display-6 fw-bold mt-3 mb-3">Comprehensive <span class="text-gradient">digital solutions</span></h2>
-        <p class="text-muted mx-auto" style="max-width: 600px;">From web development to cloud infrastructure, one team covers the full delivery stack.</p>
+        <p class="text-muted mx-auto" style="max-width: 600px;">From web development to cloud infrastructure, one team
+          covers the full delivery stack.</p>
       </div>
 
       <div class="row g-4">
@@ -1644,7 +1878,8 @@
               <i class="bi bi-code-slash"></i>
             </div>
             <h5 class="fw-bold mb-3 text-dark">Custom Software</h5>
-            <p class="text-muted small mb-4">Product engineering teams that ship reliable web platforms built for scale.</p>
+            <p class="text-muted small mb-4">Product engineering teams that ship reliable web platforms built for scale.
+            </p>
             <div class="ds-card-line"></div>
           </div>
         </div>
@@ -1677,7 +1912,8 @@
               <i class="bi bi-layers"></i>
             </div>
             <h5 class="fw-bold mb-3 text-dark">UI/UX Design</h5>
-            <p class="text-muted small mb-4">Research-led interface design systems that turn complexity into clarity.</p>
+            <p class="text-muted small mb-4">Research-led interface design systems that turn complexity into clarity.
+            </p>
             <div class="ds-card-line"></div>
           </div>
         </div>
@@ -1865,38 +2101,52 @@
   <section class="hero-orbit-sec py-5 position-relative overflow-hidden" style="background-color: #f0f7fb;">
     <div class="container py-5">
       <!-- Main White Card -->
-      <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5 position-relative z-2 border" style="border-color: rgba(0,0,0,0.05) !important;">
+      <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5 position-relative z-2 border"
+        style="border-color: rgba(0,0,0,0.05) !important;">
         <div class="row align-items-center g-5">
           <!-- Left Column: Content -->
           <div class="col-lg-7">
             <div class="hero-orbit-content pe-lg-4">
               <h1 class="display-5 fw-bold text-dark mb-4" style="line-height: 1.3; font-family: 'Inter', sans-serif;">
-                <span style="background-color: #eaddff; padding: 0 10px; border-radius: 4px;">Ready to Scale Without</span><br />
+                <span style="background-color: #eaddff; padding: 0 10px; border-radius: 4px;">Ready to Scale
+                  Without</span><br />
                 Guesswork?
               </h1>
               <p class="text-secondary mb-5" style="font-size: 1.05rem; max-width: 600px; line-height: 1.6;">
-                Build smarter products with a technology partner that aligns strategy, engineering, and execution. 
-                We help founders, CTOs, and leadership teams design and deliver scalable software and AI solutions 
+                Build smarter products with a technology partner that aligns strategy, engineering, and execution.
+                We help founders, CTOs, and leadership teams design and deliver scalable software and AI solutions
                 with clarity and confidence.
               </p>
-              
+
               <div class="mb-5">
-                <a href="#schedule" class="btn btn-primary btn-lg px-4 py-2 rounded-2 shadow-none fw-bold" style="background-color: #3b82f6; border-color: #3b82f6; font-size: 1rem;">
+                <a href="#schedule" class="btn-grad">
                   Schedule a Call
                 </a>
               </div>
-              
+
               <!-- Ratings & Trust Badges -->
               <div class="d-flex flex-column flex-sm-row align-items-sm-center border-top pt-4 mt-4">
                 <div class="d-flex me-4 mb-3 mb-sm-0 avatar-stack">
-                  <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Client 1" class="rounded-circle border border-white border-2" width="40" height="40">
-                  <img src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Client 2" class="rounded-circle border border-white border-2 ms-n3 position-relative z-1" width="40" height="40">
-                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Client 3" class="rounded-circle border border-white border-2 ms-n3 position-relative z-2" width="40" height="40">
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Client 4" class="rounded-circle border border-white border-2 ms-n3 position-relative z-3" width="40" height="40">
+                  <img
+                    src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="Client 1" class="rounded-circle border border-white border-2" width="40" height="40">
+                  <img
+                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="Client 2" class="rounded-circle border border-white border-2 ms-n3 position-relative z-1"
+                    width="40" height="40">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="Client 3" class="rounded-circle border border-white border-2 ms-n3 position-relative z-2"
+                    width="40" height="40">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt="Client 4" class="rounded-circle border border-white border-2 ms-n3 position-relative z-3"
+                    width="40" height="40">
                 </div>
                 <div>
                   <div class="text-warning mb-1" style="font-size: 1.1rem;">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p class="mb-0 text-secondary" style="font-size: 0.8rem;">
                     <span class="fw-bold text-dark">Rated 5.0 by global clients</span><br />
@@ -1906,15 +2156,18 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Right Column: Orbit Animation -->
           <div class="col-lg-5">
-            <div class="hero-orbit-graphic position-relative d-flex align-items-center justify-content-center" style="min-height: 400px;">
+            <div class="hero-orbit-graphic position-relative d-flex align-items-center justify-content-center"
+              style="min-height: 400px;">
               <!-- Background Orbit Image -->
-              <img src="assets/images/download.png" alt="Technologies" class="img-fluid" style="animation: spinOrbitImage 40s linear infinite; max-width: 450px; width: 100%;">
-              
+              <img src="assets/images/download.png" alt="Technologies" class="img-fluid"
+                style="animation: spinOrbitImage 40s linear infinite; max-width: 450px; width: 100%;">
+
               <!-- Unique Center Badge -->
-              <div class="center-badge-unique z-3" style="background: #fff; width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: absolute;">
+              <div class="center-badge-unique z-3"
+                style="background: #fff; width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: absolute;">
                 <span class="custom-d-badge">D</span>
               </div>
             </div>
@@ -1924,112 +2177,14 @@
     </div>
   </section>
 
-    <!-- ========== CASE STUDIES ========== -->
-  <section class="py-5 bg-surface reveal">
-    <div class="container py-4">
-      <div class="text-center mb-5">
-        <span class="badge-custom mb-3">CASE STUDIES</span>
-        <h2 class="section-title">Our Recent <span class="grad-text">Work</span></h2>
-        <p class="section-sub mt-2 mx-auto" style="max-width: 600px;">Explore how we've helped businesses achieve digital transformation and scale their operations.</p>
-      </div>
-
-      <div class="row g-4 mt-4">
-        <!-- Case Study 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="case-study-card position-relative overflow-hidden rounded-4 shadow-sm h-100">
-            <div class="case-study-img-wrap">
-              <img src="assets/images/case-study-1.png" alt="Case Study 1" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="case-study-overlay d-flex flex-column justify-content-end p-4">
-              <span class="badge bg-white text-dark mb-2 align-self-start" style="font-size: 0.75rem; font-weight: 600;">FinTech</span>
-              <h4 class="text-white fw-bold mb-1">Global Payment Gateway</h4>
-              <p class="text-white-50 small mb-0">Secure and scalable infrastructure for cross-border transactions.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Study 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="case-study-card position-relative overflow-hidden rounded-4 shadow-sm h-100">
-            <div class="case-study-img-wrap">
-              <img src="assets/images/case-study-2.png" alt="Case Study 2" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="case-study-overlay d-flex flex-column justify-content-end p-4">
-              <span class="badge bg-white text-dark mb-2 align-self-start" style="font-size: 0.75rem; font-weight: 600;">E-Commerce</span>
-              <h4 class="text-white fw-bold mb-1">Retail App Redesign</h4>
-              <p class="text-white-50 small mb-0">Boosting conversion rates by 40% with a seamless UX.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Study 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="case-study-card position-relative overflow-hidden rounded-4 shadow-sm h-100">
-            <div class="case-study-img-wrap">
-              <img src="assets/images/case-study-3.png" alt="Case Study 3" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="case-study-overlay d-flex flex-column justify-content-end p-4">
-              <span class="badge bg-white text-dark mb-2 align-self-start" style="font-size: 0.75rem; font-weight: 600;">Healthcare</span>
-              <h4 class="text-white fw-bold mb-1">Telemedicine Platform</h4>
-              <p class="text-white-50 small mb-0">Connecting thousands of patients with doctors in real-time.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Study 4 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="case-study-card position-relative overflow-hidden rounded-4 shadow-sm h-100">
-            <div class="case-study-img-wrap">
-              <img src="assets/images/case-study-4.png" alt="Case Study 4" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="case-study-overlay d-flex flex-column justify-content-end p-4">
-              <span class="badge bg-white text-dark mb-2 align-self-start" style="font-size: 0.75rem; font-weight: 600;">Logistics</span>
-              <h4 class="text-white fw-bold mb-1">Fleet Management Dashboard</h4>
-              <p class="text-white-50 small mb-0">AI-driven routing and real-time tracking system.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Study 5 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="case-study-card position-relative overflow-hidden rounded-4 shadow-sm h-100">
-            <div class="case-study-img-wrap">
-              <img src="assets/images/case-study-5.png" alt="Case Study 5" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="case-study-overlay d-flex flex-column justify-content-end p-4">
-              <span class="badge bg-white text-dark mb-2 align-self-start" style="font-size: 0.75rem; font-weight: 600;">Real Estate</span>
-              <h4 class="text-white fw-bold mb-1">Property Portal App</h4>
-              <p class="text-white-50 small mb-0">Immersive virtual tours and instant property valuations.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Study 6 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="case-study-card position-relative overflow-hidden rounded-4 shadow-sm h-100">
-            <div class="case-study-img-wrap">
-              <img src="assets/images/case-study-6.png" alt="Case Study 6" class="w-100 h-100 object-fit-cover">
-            </div>
-            <div class="case-study-overlay d-flex flex-column justify-content-end p-4">
-              <span class="badge bg-white text-dark mb-2 align-self-start" style="font-size: 0.75rem; font-weight: 600;">Education</span>
-              <h4 class="text-white fw-bold mb-1">Interactive E-Learning</h4>
-              <p class="text-white-50 small mb-0">Gamified learning management system for enterprise training.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
   <!-- CTA / NEWSLETTER -->
   <section class="py-5 bg-white">
     <div class="container py-4 reveal">
       <div class="cta-section border">
         <h2 class="display-5 fw-bold mb-3 text-dark">Ready to Transform Your <span class="grad-text">Vision?</span></h2>
-        <p class="text-muted mb-4" style="font-size: 1.1rem;">Let's build something extraordinary together. Enter your email below to get started.</p>
-        
+        <p class="text-muted mb-4" style="font-size: 1.1rem;">Let's build something extraordinary together. Enter your
+          email below to get started.</p>
+
         <form class="cta-newsletter d-flex justify-content-center mx-auto" onsubmit="event.preventDefault();">
           <input type="email" placeholder="Enter your email address" required>
           <button type="submit" class="btn-grad text-white fw-bold shadow-sm">Get Started</button>
@@ -2046,12 +2201,16 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <img src="assets/images/digitalks_logo.png" alt="Digitalks Logo" class="footer-logo mb-3">
           <p class="footer-about-text">
-            What happens when industry-leading developers, designers, innovators, and marketers team up to deliver the highest quality digital solutions? Well, Digitalks happened, and that was back in 2013. Since then, we have been one of the fastest-growing IT companies, focused on providing reliable and the best IT services to clients across the globe.
+            What happens when industry-leading developers, designers, innovators, and marketers team up to deliver the
+            highest quality digital solutions? Well, Digitalks happened, and that was back in 2013. Since then, we have
+            been one of the fastest-growing IT companies, focused on providing reliable and the best IT services to
+            clients across the globe.
           </p>
         </div>
         <div class="col-lg-5 ms-auto">
           <h5 class="fw-bold mb-3 footer-heading-dark">Get the freshest Digitalks Tech News</h5>
-          <p class="footer-about-text mb-4">Join the 300+ developers, designers and agencies we're proud to have as fans</p>
+          <p class="footer-about-text mb-4">Join the 300+ developers, designers and agencies we're proud to have as fans
+          </p>
           <div class="newsletter-inline">
             <input type="email" placeholder="Email Address">
             <button>Subscribe</button>
@@ -2072,14 +2231,18 @@
             <li><a href="https://digitalkstechno.com/contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="col-6 col-md-3">
           <h6 class="footer-col-title">Services</h6>
           <ul class="footer-links list-unstyled">
-            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Web Development</a></li>
-            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> App Development</a></li>
-            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> UI / UX Design</a></li>
-            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Digital Marketing</a></li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Web Development</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> App Development</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> UI / UX Design</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Digital Marketing</a>
+            </li>
           </ul>
         </div>
 
@@ -2087,9 +2250,12 @@
           <h6 class="footer-col-title">Explore</h6>
           <ul class="footer-links list-unstyled">
             <li><a href="https://digitalkstechno.com/solution"><i class="bi bi-chevron-right"></i> Solutions</a></li>
-            <li><a href="https://digitalkstechno.com/ourproducts"><i class="bi bi-chevron-right"></i> Our Products</a></li>
-            <li><a href="https://digitalkstechno.com/innovations"><i class="bi bi-chevron-right"></i> Our Innovations</a></li>
-            <li><a href="https://digitalkstechno.com/lifedigitalks"><i class="bi bi-chevron-right"></i> Life at Digitalks</a></li>
+            <li><a href="https://digitalkstechno.com/ourproducts"><i class="bi bi-chevron-right"></i> Our Products</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/innovations"><i class="bi bi-chevron-right"></i> Our
+                Innovations</a></li>
+            <li><a href="https://digitalkstechno.com/lifedigitalks"><i class="bi bi-chevron-right"></i> Life at
+                Digitalks</a></li>
           </ul>
         </div>
 
@@ -2100,11 +2266,12 @@
               <img src="https://flagcdn.com/w20/in.png" alt="India">
               <span class="fw-bold text-dark">India</span>
             </div>
-            <p class="footer-about-text small">Digitalks Techno, Opp. Nayara Petrol Pump, Singanpore Road, Katargam, Surat-395004, Gujarat, India.</p>
+            <p class="footer-about-text small">Digitalks Techno, Opp. Nayara Petrol Pump, Singanpore Road, Katargam,
+              Surat-395004, Gujarat, India.</p>
           </div>
-          
+
           <hr class="footer-divider mb-4">
-          
+
           <!-- <div class="location-box mb-4">
             <div class="d-flex align-items-center gap-2 mb-2">
               <img src="https://flagcdn.com/w20/us.png" alt="USA">
@@ -2125,10 +2292,12 @@
 
       <!-- Copyright Bottom -->
       <div class="footer-bottom text-center pt-4 position-relative z-2">
-        <p class="footer-about-text small mb-0">Copyright &copy; 2026 Digitalks Techno LLP. All Rights Reserved. | <a href="#" class="text-decoration-none footer-about-text">Terms of Use</a> | <a href="#" class="text-decoration-none footer-about-text">Privacy Policy</a></p>
+        <p class="footer-about-text small mb-0">Copyright &copy; 2026 Digitalks Techno LLP. All Rights Reserved. | <a
+            href="#" class="text-decoration-none footer-about-text">Terms of Use</a> | <a href="#"
+            class="text-decoration-none footer-about-text">Privacy Policy</a></p>
       </div>
     </div>
-    
+
     <div class="footer-giant-text">Digitalks.</div>
   </footer>
 
