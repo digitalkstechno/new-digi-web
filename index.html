@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digitalks Techno LLP — Enterprise Software & Cloud Partner</title>
+    <!-- favicon icon -->
+ <link rel="shortcut icon" href="assets/images/favicon-icon.png" type="image/png">
+    <link rel="icon" href="assets/images/favicon-icon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -34,31 +37,66 @@
               Company <i class="bi bi-chevron-down ms-1" style="font-size: 0.8rem; font-weight: bold;"></i>
             </a>
             <div class="dropdown-menu mega-menu-box shadow-lg border-0" aria-labelledby="companyDropdown">
-              <div class="d-flex flex-column gap-2 p-1">
-                <a href="aboutus.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
-                  <div class="mega-icon-box bg-light-purple">
-                    <i class="bi bi-building"></i>
+              <div class="row w-100 m-0 align-items-center">
+                <!-- Left Menu Column -->
+                <div class="col-lg-4 mega-left-col pe-2">
+                  <div class="d-flex flex-column gap-1">
+                    <a href="aboutus.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box" style="background-color: #f3e8ff; color: #9333ea;">
+                        <i class="bi bi-building"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">About Us</span>
+                    </a>
+                    <a href="ourProtfolio.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box" style="background-color: #fce7f3; color: #db2777;">
+                        <i class="bi bi-briefcase"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">Our Portfolio</span>
+                    </a>
+                    <a href="case-study.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box" style="background-color: #e0f2fe; color: #0284c7;">
+                        <i class="bi bi-file-earmark-bar-graph"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">Case Studies</span>
+                    </a>
+                    <a href="blogs.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box" style="background-color: #fff7ed; color: #ea580c;">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">Blogs</span>
+                    </a>
+                    <a href="faqs.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box" style="background-color: #fff1f2; color: #e11d48;">
+                        <i class="bi bi-question-circle"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">FAQs</span>
+                    </a>
                   </div>
-                  <span class="mega-text text-dark fw-bold ms-3">About Us</span>
-                </a>
-                <a href="ourProtfolio.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
-                  <div class="mega-icon-box bg-light-green">
-                    <i class="bi bi-lightbulb"></i>
+                </div>
+                <!-- Right Content Column -->
+                <div class="col-lg-8 ps-4 d-none d-lg-block">
+                  <div class="row g-4">
+                    <div class="col-6">
+                      <a href="blogs_details.html" class="text-decoration-none featured-blog-card">
+                        <img src="assets/images/blog_ai_tech.png" alt="Blog 1">
+                        <p class="overlay-text">How to Build HIPAA-Compliant AI Chatbots for Healthcare: A Complete Privacy & Compliance Guide</p>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="blogs_details.html" class="text-decoration-none featured-blog-card">
+                        <img src="assets/images/blog_cloud.png" alt="Blog 2">
+                        <p class="overlay-text">How to Build an AI EdTech Startup: A Complete Guide to Launching a Scalable AI Learning Platform</p>
+                      </a>
+                    </div>
                   </div>
-                  <span class="mega-text text-dark fw-bold ms-3">Our Portfolio</span>
-                </a>
-                <a href="case-study.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
-                  <div class="mega-icon-box bg-light-blue">
-                    <i class="bi bi-journal-text"></i>
-                  </div>
-                  <span class="mega-text text-dark fw-bold ms-3">Case Studies</span>
-                </a>
+                </div>
               </div>
             </div>
           </li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#ourproducts">Our Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lifedigitalks">Life at Digitalks</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
         </ul>
         <a href="#contact" class="btn-grad mt-3 mt-lg-0 text-center">Get a quote</a>
       </div>
@@ -1789,7 +1827,7 @@
           <p class="sub-title">Insights & Articles</p>
           <h2 class="section-title">Latest from <span class="grad-text">Digitalk</span></h2>
         </div>
-        <a href="#" class="btn btn-outline-primary d-none d-md-inline-flex align-items-center gap-2"
+        <a href="blogs.html" class="btn btn-outline-primary d-none d-md-inline-flex align-items-center gap-2"
           style="border-radius: 50px;">
           View All <i class="bi bi-arrow-right"></i>
         </a>
@@ -1809,7 +1847,7 @@
               <h3 class="blog-title">The Future of AI in Enterprise Software</h3>
               <p class="blog-excerpt">Discover how generative AI is reshaping the way large organizations manage data
                 and automate complex workflows.</p>
-              <a href="#" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
+              <a href="blogs_details.html" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -1827,7 +1865,7 @@
               <h3 class="blog-title">Building Intuitive User Interfaces in 2027</h3>
               <p class="blog-excerpt">A deep dive into the latest UI/UX trends focusing on glassmorphism,
                 micro-interactions, and accessibility.</p>
-              <a href="#" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
+              <a href="blogs_details.html" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -1845,7 +1883,7 @@
               <h3 class="blog-title">Scaling Your Cloud Infrastructure</h3>
               <p class="blog-excerpt">Key strategies for startups and SMEs to migrate to the cloud efficiently while
                 keeping server costs low.</p>
-              <a href="#" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
+              <a href="blogs_details.html" class="blog-link">Read Article <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -2229,6 +2267,7 @@
             <li><a href="https://digitalkstechno.com/about"><i class="bi bi-chevron-right"></i> About Us</a></li>
             <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Services</a></li>
             <li><a href="https://digitalkstechno.com/contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            <li><a href="faqs.html"><i class="bi bi-chevron-right"></i> FAQs</a></li>
           </ul>
         </div>
 
@@ -2408,6 +2447,43 @@
       }
     });
   </script>
+<!-- ========== CHAT WIDGET ========== -->
+<div class="chat-widget">
+  <button class="chat-fab" id="chatFabBtn" aria-label="Open chat with Digitalks Assistant">
+    <i class="bi bi-chat-dots-fill"></i>
+  </button>
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-popup-header">
+      <span>Digitalks Assistant</span>
+      <button class="chat-popup-close" id="chatCloseBtn" aria-label="Close chat"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="chat-popup-body">
+      <p class="mb-0">👋 Hello! I'm <strong>Digitalks Assistant</strong>. How can I help you today?</p>
+    </div>
+    <div class="chat-popup-footer">
+      <a href="https://wa.me/919974447099" target="_blank" rel="noopener" class="chat-whatsapp-btn">
+        <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  const fab = document.getElementById('chatFabBtn');
+  const popup = document.getElementById('chatPopup');
+  const closeBtn = document.getElementById('chatCloseBtn');
+  if(!fab || !popup) return;
+  fab.addEventListener('click', function(e){
+    e.stopPropagation();
+    popup.classList.toggle('open');
+  });
+  closeBtn.addEventListener('click', function(){ popup.classList.remove('open'); });
+  document.addEventListener('click', function(e){
+    if(!popup.contains(e.target) && !fab.contains(e.target)){
+      popup.classList.remove('open');
+    }
+  });
+})();
+</script>
 </body>
-
 </html>

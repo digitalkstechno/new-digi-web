@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technologies | Digitalks Techno</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- favicon icon -->
+<link rel="shortcut icon" href="assets/images/favicon-icon.png" type="image/png">
+<link rel="icon" href="assets/images/favicon-icon.png" type="image/png">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- FontAwesome 6 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css?v=1.4">
+
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/digitalks_logo.png" width="180px" height="auto" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+      <ul class="navbar-nav align-items-center gap-2 mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown dropdown-mega">
+          <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Company <i class="bi bi-chevron-down ms-1" style="font-size: 0.8rem; font-weight: bold;"></i>
+          </a>
+          <div class="dropdown-menu mega-menu-box shadow-lg border-0" aria-labelledby="companyDropdown">
+            <div class="row w-100 m-0 align-items-center">
+              <div class="col-lg-4 mega-left-col pe-2">
+                <div class="d-flex flex-column gap-1">
+                  <a href="aboutus.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box" style="background-color: #f3e8ff; color: #9333ea;">
+                      <i class="bi bi-building"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-bold ms-3">About Us</span>
+                  </a>
+                  <a href="ourProtfolio.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box" style="background-color: #fce7f3; color: #db2777;">
+                      <i class="bi bi-briefcase"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-bold ms-3">Our Portfolio</span>
+                  </a>
+                  <a href="case-study.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box" style="background-color: #e0f2fe; color: #0284c7;">
+                      <i class="bi bi-file-earmark-bar-graph"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-bold ms-3">Case Studies</span>
+                  </a>
+                  <a href="blogs.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box" style="background-color: #fff7ed; color: #ea580c;">
+                      <i class="bi bi-layout-text-window-reverse"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-bold ms-3">Blogs</span>
+                  </a>
+                  <a href="faqs.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box" style="background-color: #fff1f2; color: #e11d48;">
+                      <i class="bi bi-question-circle"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-bold ms-3">FAQs</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 ps-4 d-none d-lg-block">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <a href="blogs_details.html" class="text-decoration-none featured-blog-card">
+                      <img src="assets/images/blog_ai_tech.png" alt="Blog 1">
+                      <p class="overlay-text">How to Build HIPAA-Compliant AI Chatbots for Healthcare: A Complete Privacy & Compliance Guide</p>
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <a href="blogs_details.html" class="text-decoration-none featured-blog-card">
+                      <img src="assets/images/blog_cloud.png" alt="Blog 2">
+                      <p class="overlay-text">How to Build an AI EdTech Startup: A Complete Guide to Launching a Scalable AI Learning Platform</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#ourproducts">Our Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+      </ul>
+      <a href="contact.html" class="btn-grad mt-3 mt-lg-0 text-center">Get a quote</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="tech-hero-section position-relative overflow-hidden pt-5 pb-5 mt-4">
+  <div class="container container-xl mt-5">
+    <div class="row align-items-center g-5">
+      <div class="col-12 col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+        <span class="eyebrow d-block mb-3">TECHNOLOGY SOLUTIONS WE DELIVER</span>
+        <h1 class="display-4 fw-bold mb-4" style="color: #0f172a; line-height: 1.2;">Build Scalable Digital Products with the Right Technology Stack</h1>
+        <p class="text-secondary fs-5 mb-3">Choosing the right technology is key to building fast, reliable, and future-ready applications. We focus on modern tools and frameworks that support performance, flexibility, and long-term growth.</p>
+        <p class="text-secondary fs-5 mb-4">Our experience across multiple technologies allows us to develop solutions tailored to different business needs, from planning to deployment.</p>
+        
+        <div class="row g-3 mb-5">
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span class="fw-medium text-dark">Scalable tech stack</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span class="fw-medium text-dark">High performance</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span class="fw-medium text-dark">Faster delivery</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-check-circle-fill text-primary fs-5"></i>
+              <span class="fw-medium text-dark">Future-ready solutions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a href="contact.html" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">Get a Free Quote</a>
+          <a href="ourProtfolio.html" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold">View Our Work</a>
+        </div>
+      </div>
+      
+      <div class="col-12 col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+        <img src="assets/images/blog_cloud.png" class="img-fluid rounded-4 shadow-lg w-100" style="object-fit: cover; aspect-ratio: 4/3;" alt="Technology Stack Banner">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MARQUEE SECTION ========== -->
+<section class="marquee-section py-4 border-top border-bottom overflow-hidden" style="background-color: #f8fafc;">
+  <div class="marquee-container d-flex align-items-center">
+    <div class="marquee-content d-flex align-items-center gap-5 px-5">
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-aws fs-2"></i> AWS Partner</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-google fs-2"></i> Google Cloud</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-microsoft fs-2"></i> Azure</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-digital-ocean fs-2"></i> DigitalOcean</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-apple fs-2"></i> Apple</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-android fs-2"></i> Android</h3>
+      
+      <!-- Duplicate for infinite scroll effect -->
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-aws fs-2"></i> AWS Partner</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-google fs-2"></i> Google Cloud</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-microsoft fs-2"></i> Azure</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-digital-ocean fs-2"></i> DigitalOcean</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-apple fs-2"></i> Apple</h3>
+      <h3 class="fw-bold text-muted mb-0 mx-4 d-flex align-items-center gap-2"><i class="fa-brands fa-android fs-2"></i> Android</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CUSTOM AI & TECH SERVICES ========== -->
+<section class="py-5 my-5 bg-white">
+  <div class="container container-xl">
+    <div class="row g-5">
+      <!-- Sticky Left Side -->
+      <div class="col-12 col-lg-5" data-aos="fade-right">
+        <div class="sticky-top pt-4" style="top: 100px;">
+          <span class="eyebrow mb-2 d-block">CUSTOM DEVELOPMENT SERVICES</span>
+          <h2 class="display-6 fw-bold text-dark mb-4">Software Solutions Powered by Modern Technologies</h2>
+          <p class="fs-5 text-secondary mb-5">Modern businesses rely on advanced technologies, tools, and frameworks to build fast, scalable applications that support performance, flexibility, and long-term growth.</p>
+          <img src="assets/images/blog_ai_tech.png" class="img-fluid rounded-4 shadow-sm w-100 mb-4" style="object-fit: cover; aspect-ratio: 16/9;" alt="Modern Tech Services">
+          <a href="contact.html" class="btn btn-primary rounded-pill px-4 py-3 fw-bold w-100 shadow-sm d-flex justify-content-between align-items-center">
+            Get a Free Consultation <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Scrolling Right Side (Cards) -->
+      <div class="col-12 col-lg-7 ps-lg-5 pt-4">
+        <div class="row flex-column gap-4">
+          
+          <!-- ReactJS Card -->
+          <div class="col-12" data-aos="fade-up" data-aos-offset="100">
+            <div class="card border-1 shadow-sm rounded-4 h-100 p-4 tech-list-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="tech-icon-large d-flex align-items-center justify-content-center rounded-3" style="color: #61DAFB; background: rgba(97,218,251,0.1); width: 60px; height: 60px; font-size: 30px;">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-medium mt-2">Learn More</a>
+                </div>
+                <h3 class="fw-bold h4 mb-3">ReactJS</h3>
+                <p class="text-secondary mb-0">ReactJS is used to build fast and interactive user interfaces for web applications. It helps create smooth user experiences with reusable components and efficient performance.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- NodeJS Card -->
+          <div class="col-12" data-aos="fade-up" data-aos-offset="100">
+            <div class="card border-1 shadow-sm rounded-4 h-100 p-4 tech-list-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="tech-icon-large d-flex align-items-center justify-content-center rounded-3" style="color: #68A063; background: rgba(104,160,99,0.1); width: 60px; height: 60px; font-size: 30px;">
+                    <i class="fa-brands fa-node-js"></i>
+                  </div>
+                  <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-medium mt-2">Learn More</a>
+                </div>
+                <h3 class="fw-bold h4 mb-3">NodeJS</h3>
+                <p class="text-secondary mb-0">NodeJS allows fast and scalable backend development using JavaScript. It is ideal for real-time applications and handling high user traffic efficiently.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python Card -->
+          <div class="col-12" data-aos="fade-up" data-aos-offset="100">
+            <div class="card border-1 shadow-sm rounded-4 h-100 p-4 tech-list-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="tech-icon-large d-flex align-items-center justify-content-center rounded-3" style="color: #3776AB; background: rgba(55,118,171,0.1); width: 60px; height: 60px; font-size: 30px;">
+                    <i class="fa-brands fa-python"></i>
+                  </div>
+                  <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-medium mt-2">Learn More</a>
+                </div>
+                <h3 class="fw-bold h4 mb-3">Python</h3>
+                <p class="text-secondary mb-0">Python is widely used for building scalable applications, automation, and data-driven solutions. Its simplicity makes development faster and more efficient.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHP / Laravel Card -->
+          <div class="col-12" data-aos="fade-up" data-aos-offset="100">
+            <div class="card border-1 shadow-sm rounded-4 h-100 p-4 tech-list-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="tech-icon-large d-flex align-items-center justify-content-center rounded-3" style="color: #777BB4; background: rgba(119,123,180,0.1); width: 60px; height: 60px; font-size: 30px;">
+                    <i class="fa-brands fa-php"></i>
+                  </div>
+                  <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-medium mt-2">Learn More</a>
+                </div>
+                <h3 class="fw-bold h4 mb-3">PHP & Laravel</h3>
+                <p class="text-secondary mb-0">PHP is a reliable technology for building dynamic websites, and Laravel provides a robust framework for secure, scalable, and fast web development workflows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Android Card -->
+          <div class="col-12" data-aos="fade-up" data-aos-offset="100">
+            <div class="card border-1 shadow-sm rounded-4 h-100 p-4 tech-list-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-4">
+                  <div class="tech-icon-large d-flex align-items-center justify-content-center rounded-3" style="color: #3DDC84; background: rgba(61,220,132,0.1); width: 60px; height: 60px; font-size: 30px;">
+                    <i class="fa-brands fa-android"></i>
+                  </div>
+                  <a href="contact.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-medium mt-2">Learn More</a>
+                </div>
+                <h3 class="fw-bold h4 mb-3">Android</h3>
+                <p class="text-secondary mb-0">Android development helps create mobile apps for a wide range of devices. It ensures strong performance and flexibility for different business needs.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SOFTWARE DEVELOPMENT PLATFORMS (TABS) ========== -->
+<section class="py-5" style="background-color: #f8fafc;">
+  <div class="container container-xl my-4">
+    <div class="row align-items-center mb-5" data-aos="fade-up">
+      <div class="col-lg-5">
+        <h2 class="display-6 fw-bold mb-3">Software Development Platforms &amp; Technologies</h2>
+      </div>
+      <div class="col-lg-7 border-start border-2 border-primary ps-4">
+        <p class="fs-5 text-secondary mb-0">Create exceptional customer experiences &amp; drive meaningful insights guided by the best app development practices and technology trends in the digital world.</p>
+      </div>
+    </div>
+
+    <div class="tech-tabs-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <ul class="nav nav-pills custom-tech-tabs mb-4 justify-content-center flex-wrap gap-2" id="tech-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4 fw-medium" id="frontend-tab" data-bs-toggle="pill" data-bs-target="#frontend" type="button" role="tab">Frontend</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-medium" id="backend-tab" data-bs-toggle="pill" data-bs-target="#backend" type="button" role="tab">Backend</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-medium" id="mobile-tab" data-bs-toggle="pill" data-bs-target="#mobile" type="button" role="tab">Mobile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-medium" id="database-tab" data-bs-toggle="pill" data-bs-target="#database" type="button" role="tab">Database</button>
+        </li>
+      </ul>
+
+      <div class="tab-content bg-white p-5 rounded-4 shadow-sm" id="tech-tabs-content">
+        <!-- Frontend Tab -->
+        <div class="tab-pane fade show active" id="frontend" role="tabpanel">
+          <div class="row row-cols-2 row-cols-md-4 g-4 text-center justify-content-center">
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-react display-4 mb-3" style="color: #61DAFB;"></i>
+                <h5 class="fw-bold mb-0">ReactJS</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-angular display-4 mb-3" style="color: #DD0031;"></i>
+                <h5 class="fw-bold mb-0">Angular</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-vuejs display-4 mb-3" style="color: #4FC08D;"></i>
+                <h5 class="fw-bold mb-0">VueJS</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-html5 display-4 mb-3" style="color: #E34F26;"></i>
+                <h5 class="fw-bold mb-0">HTML5</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Backend Tab -->
+        <div class="tab-pane fade" id="backend" role="tabpanel">
+          <div class="row row-cols-2 row-cols-md-4 g-4 text-center justify-content-center">
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-node-js display-4 mb-3" style="color: #68A063;"></i>
+                <h5 class="fw-bold mb-0">NodeJS</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-python display-4 mb-3" style="color: #3776AB;"></i>
+                <h5 class="fw-bold mb-0">Python</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-php display-4 mb-3" style="color: #777BB4;"></i>
+                <h5 class="fw-bold mb-0">PHP</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-java display-4 mb-3" style="color: #007396;"></i>
+                <h5 class="fw-bold mb-0">Java</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Tab -->
+        <div class="tab-pane fade" id="mobile" role="tabpanel">
+          <div class="row row-cols-2 row-cols-md-4 g-4 text-center justify-content-center">
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-android display-4 mb-3" style="color: #3DDC84;"></i>
+                <h5 class="fw-bold mb-0">Android</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-apple display-4 mb-3" style="color: #555555;"></i>
+                <h5 class="fw-bold mb-0">iOS</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-react display-4 mb-3" style="color: #61DAFB;"></i>
+                <h5 class="fw-bold mb-0">React Native</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-google display-4 mb-3" style="color: #4285F4;"></i>
+                <h5 class="fw-bold mb-0">Flutter</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database Tab -->
+        <div class="tab-pane fade" id="database" role="tabpanel">
+          <div class="row row-cols-2 row-cols-md-4 g-4 text-center justify-content-center">
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-solid fa-database display-4 mb-3" style="color: #4479A1;"></i>
+                <h5 class="fw-bold mb-0">MySQL</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-solid fa-leaf display-4 mb-3" style="color: #47A248;"></i>
+                <h5 class="fw-bold mb-0">MongoDB</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-solid fa-server display-4 mb-3" style="color: #336791;"></i>
+                <h5 class="fw-bold mb-0">PostgreSQL</h5>
+              </div>
+            </div>
+            <div class="col">
+              <div class="tech-grid-item p-4 border rounded-3 bg-light tech-hover-card">
+                <i class="fa-brands fa-aws display-4 mb-3" style="color: #FF9900;"></i>
+                <h5 class="fw-bold mb-0">DynamoDB</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<section class="container container-xl my-5">
+  <div class="cta-banner" data-aos="zoom-in" data-aos-duration="1000">
+    <div>
+      <span class="eyebrow">Ready to upgrade your tech stack?</span>
+      <h2 class="mb-0">Transform Your Vision With <span style="color:var(--maroon-darker)">Digitalks</span></h2>
+      <p class="section-sub mx-0 mt-2 mb-0">From consultation to implementation, we deliver reliable and scalable IT solutions tailored to your business needs.</p>
+    </div>
+    <a href="contact.html" class="btn-maroon">Talk to our Experts <i class="bi bi-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer id="footer">
+  <div class="container container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="navbar-brand brand-logo" href="#"><img src="assets/images/Digitalkslogo.webp"
+            alt="Digitalks Techno logo"></a>
+        <p class="desc mt-3">Modern digital solutions for growing businesses. We turn ideas into digital reality.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <a href="/">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+             <div class="col-6 col-lg-2">
+        <h6>Services</h6>
+        <a href="services.html">Web Development</a>
+        <a href="services.html">App Development</a>
+        <a href="services.html">UI / UX Design</a>
+        <a href="services.html">Digital Marketing</a>
+      </div>
+      <div class="col-lg-4">
+        <h6>Contact</h6>
+        <a href="tel:+919974470999"><i class="bi bi-telephone-fill me-2"></i>+91 9974 4470 99</a>
+        <a href="mailto:contact@digitalkstechno.com"><i
+            class="bi bi-envelope-fill me-2"></i>contact@digitalkstechno.com</a>
+        <a href="https://maps.app.goo.gl/Je51bqBj6CDxckMe9"><i class="bi bi-geo-alt-fill me-2"></i>C1, 2nd Floor, Adarsh Farsan Mart, Ganesh Colony, Baroda
+          Prestige, Surat, Gujarat - 395006, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Digitalks Techno LLP. All rights reserved.</span>
+      <span><a href="privacy_policy.html" class="d-inline">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html" class="d-inline">Terms of
+          Service</a></span>
+    </div>
+  </div>
+</footer>
+<!-- ========== CHAT WIDGET ========== -->
+<div class="chat-widget">
+<button class="chat-fab" id="chatFabBtn" aria-label="Open chat with Digitalks Assistant">
+  <i class="bi bi-chat-dots-fill"></i>
+</button>
+<div class="chat-popup" id="chatPopup">
+  <div class="chat-popup-header">
+    <span>Digitalks Assistant</span>
+    <button class="chat-popup-close" id="chatCloseBtn" aria-label="Close chat"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="chat-popup-body">
+    <p class="mb-0">👋 Hello! I'm <strong>Digitalks Assistant</strong>. How can I help you today?</p>
+  </div>
+  <div class="chat-popup-footer">
+    <a href="https://wa.me/919974447099" target="_blank" rel="noopener" class="chat-whatsapp-btn">
+      <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+    </a>
+  </div>
+</div>
+</div>
+<script>
+(function(){
+const fab = document.getElementById('chatFabBtn');
+const popup = document.getElementById('chatPopup');
+const closeBtn = document.getElementById('chatCloseBtn');
+if(!fab || !popup) return;
+fab.addEventListener('click', function(e){
+  e.stopPropagation();
+  popup.classList.toggle('open');
+});
+closeBtn.addEventListener('click', function(){ popup.classList.remove('open'); });
+document.addEventListener('click', function(e){
+  if(!popup.contains(e.target) && !fab.contains(e.target)){
+    popup.classList.remove('open');
+  }
+});
+})();
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/navbar.js?v=1.2"></script>
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Initialize AOS Scroll Animations
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true,
+  offset: 50
+});
+
+// Navbar glass effect on scroll
+const nav = document.querySelector('.navbar-custom');
+if(nav) {
+  window.addEventListener('scroll', ()=>{
+    nav.classList.toggle('scrolled', window.scrollY > 30);
+  }, {passive:true});
+}
+</script>
+</body>
+</html>
