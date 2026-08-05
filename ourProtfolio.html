@@ -32,10 +32,10 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
     <div class="container d-flex align-items-center justify-content-between">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/digitalks_logo.png" width="180px" height="auto" />
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/digitalks_logo.png" width="180px" height="auto" alt="Digitalks Logo" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +43,9 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="mainNav">
         <ul class="navbar-nav align-items-center gap-2 mx-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
           <li class="nav-item dropdown dropdown-mega">
-            <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button"
+            <a class="nav-link dropdown-toggle active" href="#" id="companyDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Company <i class="bi bi-chevron-down ms-1" class="nav-chevron"></i>
             </a>
@@ -109,7 +109,7 @@
             </div>
           </li>
           <li class="nav-item dropdown dropdown-mega">
-            <a class="nav-link dropdown-toggle tech-dropdown-toggle" href="technology.html" id="techDropdown"
+            <a class="nav-link dropdown-toggle tech-dropdown-toggle " href="technology.html" id="techDropdown"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Technologies <i class="bi bi-chevron-down ms-1" class="nav-chevron"></i>
             </a>
@@ -154,7 +154,6 @@
                         alt=".NET" class="tech-icon-img">
                       <span class="text-dark fw-medium">.NET</span></a>
                   </div>
-                  
                   <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
                         alt="Laravel" class="tech-icon-img">
@@ -170,8 +169,6 @@
                         alt="iOS" class="tech-icon-img">
                       <span class="text-dark fw-medium">iOS</span></a>
                   </div>
-                 
-                 
                 </div>
                 <!-- Stats section -->
                 <div
@@ -202,8 +199,8 @@
               </div>
             </div>
           </li>
-                                          <li class="nav-item dropdown dropdown-mega">
-            <a class="nav-link dropdown-toggle active" href="industries.html" id="industriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle " href="industries.html" id="industriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Industries <i class="bi bi-chevron-down ms-1 nav-chevron"></i>
             </a>
             <div class="dropdown-menu mega-menu-box ind-mega-menu shadow-lg border-0" aria-labelledby="industriesDropdown">
@@ -250,30 +247,28 @@
               </div>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#ourproducts">Our Products</a></li>
-        
-          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link " href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link " href="index.html#ourproducts">Our Products</a></li>
+          <li class="nav-item"><a class="nav-link " href="career.html">Careers</a></li>
         </ul>
-        <a href="contact.html" class="btn-grad mt-3 mt-lg-0 text-center digi-style-1">Get a quote</a>
+        <a href="contact.html" class="btn-grad mt-3 mt-lg-0 text-center">Get a quote</a>
       </div>
     </div>
   </nav>
 
   <!-- ========== SOLUTION HERO ========== -->
-  <section class="solution-hero-new position-relative overflow-hidden mb-5 d-flex align-items-center digi-style-36">
+  <section class="solution-hero-new position-relative overflow-hidden mb-5 d-flex align-items-center" style="min-height: 400px; background: linear-gradient(135deg, #fcfaff 0%, #f3f5ff 100%); border-bottom: 1px solid rgba(0,0,0,0.03);">
     <!-- Abstract Background Elements -->
-    <div class="position-absolute rounded-circle digi-style-37"></div>
-    <div class="position-absolute rounded-circle digi-style-38"></div>
-    <div class="position-absolute w-100 h-100 top-0 start-0 digi-style-39"></div>
+    <div class="position-absolute rounded-circle" style="width: 300px; height: 300px; background: radial-gradient(circle, rgba(147,51,234,0.03) 0%, rgba(255,255,255,0) 70%); top: -100px; left: -100px;"></div>
+    <div class="position-absolute w-100 h-100 top-0 start-0" style="background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px); background-size: 20px 20px;"></div>
 
-    <div class="container position-relative z-2 text-center">
-      <div class="d-inline-flex align-items-center mb-4 px-4 py-2 rounded-pill shadow-sm digi-style-40">
-        <span class="digi-style-41"><i class="bi bi-stars me-2"></i> Our Portfolio</span>
+    <div class="container position-relative z-2 text-center pt-5">
+      <div class="d-inline-flex align-items-center mb-4 px-4 py-2 rounded-pill shadow-sm bg-white" style="border: 1px solid rgba(0,0,0,0.05);">
+        <span style="color: #6366f1; font-weight: 600; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;"><i class="bi bi-stars me-2"></i> Our Portfolio</span>
       </div>
-      <h1 class="display-4 fw-bolder text-dark mb-4 digi-style-42">Industry-Specific Apps to Grow <br>Your <span
-          class="digi-style-43">Business</span></h1>
-      <p class="text-secondary fs-5 mx-auto mb-4 digi-style-44">Explore our ready-to-use digital solutions, designed to
+      <h1 class="display-4 fw-bolder text-dark mb-4" style="line-height: 1.2;">Industry-Specific Apps to Grow <br>Your <span
+          class="grad-text">Business</span></h1>
+      <p class="text-secondary fs-5 mx-auto mb-4" style="max-width: 650px; line-height: 1.6;">Explore our ready-to-use digital solutions, designed to
         improve efficiency, enhance productivity, and deliver measurable results.</p>
     </div>
   </section>
