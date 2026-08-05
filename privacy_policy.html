@@ -22,52 +22,232 @@
 </head>
 <body>
 
-<!-- ========== NAVBAR ========== -->
-  <nav class="navbar navbar-expand navbar-custom">
-    <div class="container container-xl">
-      <a class="navbar-brand brand-logo" href="#"><img src="assets/images/Digitalkslogo.webp"
-          alt="Digitalks Techno logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/digitalks_logo.png" width="180px" height="auto" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
-        <ul class="navbar-nav nav-links mx-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+        <ul class="navbar-nav align-items-center gap-2 mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item dropdown dropdown-mega">
-            <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Company <i class="bi bi-chevron-down ms-1" style="font-size: 0.8rem; font-weight: bold;"></i>
+            <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Company <i class="bi bi-chevron-down ms-1" class="nav-chevron"></i>
             </a>
             <div class="dropdown-menu mega-menu-box shadow-lg border-0" aria-labelledby="companyDropdown">
-              <div class="d-flex flex-column gap-2 p-1">
-                <a href="aboutus.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
-                  <div class="mega-icon-box bg-light-purple">
-                    <i class="bi bi-building"></i>
+              <div class="row w-100 m-0 align-items-center">
+                <!-- Left Menu Column -->
+                <div class="col-lg-4 mega-left-col pe-2">
+                  <div class="d-flex flex-column gap-1">
+                    <a href="aboutus.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box bg-purple-light text-purple">
+                        <i class="bi bi-building"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">About Us</span>
+                    </a>
+                    <a href="ourProtfolio.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box bg-pink-light text-pink">
+                        <i class="bi bi-briefcase"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">Our Portfolio</span>
+                    </a>
+                    <a href="case-study.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box bg-blue-light text-blue">
+                        <i class="bi bi-file-earmark-bar-graph"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">Case Studies</span>
+                    </a>
+                    <a href="blogs.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box bg-orange-light text-orange">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">Blogs</span>
+                    </a>
+                    <a href="faqs.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                      <div class="mega-icon-box bg-red-light text-red">
+                        <i class="bi bi-question-circle"></i>
+                      </div>
+                      <span class="mega-text text-dark fw-bold ms-3">FAQs</span>
+                    </a>
                   </div>
-                  <span class="mega-text text-dark fw-bold ms-3">About Us</span>
-                </a>
-                <a href="ourProtfolio.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
-                  <div class="mega-icon-box bg-light-green">
-                    <i class="bi bi-lightbulb"></i>
+                </div>
+                <!-- Right Content Column -->
+                <div class="col-lg-8 ps-4 d-none d-lg-block">
+                  <div class="row g-4">
+                    <div class="col-6">
+                      <a href="blogs_details.html" class="text-decoration-none featured-blog-card">
+                        <img src="assets/images/blog_ai_tech.png" alt="Blog 1">
+                        <p class="overlay-text">How to Build HIPAA-Compliant AI Chatbots for Healthcare: A Complete
+                          Privacy & Compliance Guide</p>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="blogs_details.html" class="text-decoration-none featured-blog-card">
+                        <img src="assets/images/blog_cloud.png" alt="Blog 2">
+                        <p class="overlay-text">How to Build an AI EdTech Startup: A Complete Guide to Launching a
+                          Scalable AI Learning Platform</p>
+                      </a>
+                    </div>
                   </div>
-                  <span class="mega-text text-dark fw-bold ms-3">Our Portfolio</span>
-                </a>
-                <a href="case-study.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
-                  <div class="mega-icon-box bg-light-blue">
-                    <i class="bi bi-journal-text"></i>
-                  </div>
-                  <span class="mega-text text-dark fw-bold ms-3">Case Studies</span>
-                </a>
+                </div>
               </div>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="ourproducts.html">Our Products</a></li>
-
-          <li class="nav-item"><a class="nav-link" href="life_at_digitalks.html">Life at Digitalks</a></li>
+          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle tech-dropdown-toggle" href="technology.html" id="techDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technologies <i class="bi bi-chevron-down ms-1" class="nav-chevron"></i>
+            </a>
+            <div class="dropdown-menu mega-menu-box tech-mega-menu shadow-lg border-0" aria-labelledby="techDropdown">
+              <div class="p-3">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 mb-4">
+                  <!-- Row 1 -->
+                  <div class="col"><a href="reactjs-development.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        alt="React" class="tech-icon-img">
+                      <span class="text-dark fw-medium">React Js</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                        alt="Node Js" class="tech-icon-img">
+                      <span class="text-dark fw-medium">Node Js</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
+                        alt="Angular Js" class="tech-icon-img">
+                      <span class="text-dark fw-medium">Angular Js</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                        alt="Python" class="tech-icon-img">
+                      <span class="text-dark fw-medium">Python</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+                        alt="Django" class="tech-icon-img filter-django">
+                      <span class="text-dark fw-medium">Django</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                        alt="PHP" class="tech-icon-img">
+                      <span class="text-dark fw-medium">PHP</span></a>
+                  </div>
+                  <!-- Row 2 -->
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"
+                        alt=".NET" class="tech-icon-img">
+                      <span class="text-dark fw-medium">.NET</span></a>
+                  </div>
+                  
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                        alt="Laravel" class="tech-icon-img">
+                      <span class="text-dark fw-medium">Laravel</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
+                        alt="Android" class="tech-icon-img">
+                      <span class="text-dark fw-medium">Android</span></a>
+                  </div>
+                  <div class="col"><a href="technology.html" class="tech-box-card text-decoration-none">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg"
+                        alt="iOS" class="tech-icon-img">
+                      <span class="text-dark fw-medium">iOS</span></a>
+                  </div>
+                 
+                 
+                </div>
+                <!-- Stats section -->
+                <div
+                  class="tech-mega-stats d-flex flex-wrap justify-content-between align-items-center rounded-4 px-4 py-3 bg-gray-light">
+                  <div class="text-center">
+                    <h4 class="fw-bold mb-0 text-dark">300+</h4><small class="text-muted fw-medium">No. of
+                      Engineers</small>
+                  </div>
+                  <div class="border-end border-2 d-none d-md-block border-blue-light border-divider"></div>
+                  <div class="text-center">
+                    <h4 class="fw-bold mb-0 text-dark">800+</h4><small class="text-muted fw-medium">Project
+                      Delivered</small>
+                  </div>
+                  <div class="border-end border-2 d-none d-md-block border-blue-light border-divider"></div>
+                  <div class="text-center">
+                    <h4 class="fw-bold mb-0 text-dark">4.9</h4><small class="text-muted fw-medium">Clutch Rating</small>
+                  </div>
+                  <div class="border-end border-2 d-none d-md-block border-blue-light border-divider"></div>
+                  <div class="text-center">
+                    <h4 class="fw-bold mb-0 text-dark">5.0</h4><small class="text-muted fw-medium">Google Rating</small>
+                  </div>
+                  <div class="border-end border-2 d-none d-md-block border-blue-light border-divider"></div>
+                  <div class="text-center">
+                    <h4 class="fw-bold mb-0 text-dark">10+</h4><small class="text-muted fw-medium">Year of
+                      Experience</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+                                          <li class="nav-item dropdown dropdown-mega">
+            <a class="nav-link dropdown-toggle active" href="industries.html" id="industriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Industries <i class="bi bi-chevron-down ms-1 nav-chevron"></i>
+            </a>
+            <div class="dropdown-menu mega-menu-box ind-mega-menu shadow-lg border-0" aria-labelledby="industriesDropdown">
+              <div class="row g-4">
+                <!-- Col 1 -->
+                <div class="col-md-4">
+                  <a href="healthcare-software-development.html" class="mega-menu-item text-decoration-none d-flex align-items-center mb-4">
+                    <div class="mega-icon-box bg-green-light text-green">
+                      <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-medium ms-3">Health Care</span>
+                  </a>
+                  <a href="industries.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box bg-purple-light text-purple">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-medium ms-3 text-nowrap">Education (E-Learning)</span>
+                  </a>
+                </div>
+                <!-- Col 2 -->
+                <div class="col-md-4">
+                  <a href="industries.html" class="mega-menu-item text-decoration-none d-flex align-items-center mb-4">
+                    <div class="mega-icon-box bg-blue-light text-blue mt-1">
+                      <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-medium ms-3">Wellness and Hospitality</span>
+                  </a>
+                  <a href="industries.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box bg-green-light text-green">
+                      <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-medium ms-3 text-nowrap">Industrial Automation</span>
+                  </a>
+                </div>
+                <!-- Col 3 -->
+                <div class="col-md-4">
+                  <a href="industries.html" class="mega-menu-item text-decoration-none d-flex align-items-center">
+                    <div class="mega-icon-box bg-orange-light text-orange">
+                      <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <span class="mega-text text-dark fw-medium ms-3">Fitness</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/#ourproducts">Our Products</a></li>
+        
+          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
         </ul>
+        <a href="contact.html" class="btn-grad mt-3 mt-lg-0 text-center digi-style-1">Get a quote</a>
       </div>
-      <a href="contact.html" class="btn-maroon">Get Quote</a>
     </div>
   </nav>
 
@@ -263,3 +443,7 @@ revealEls.forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
+
+
+
+

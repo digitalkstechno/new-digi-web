@@ -19,31 +19,51 @@ function initNavbar() {
     }
 
     // 2. Extract links from desktop navbar
-    const navLinks = desktopNavbar.querySelectorAll('.nav-links .nav-link');
+    const navLinks = desktopNavbar.querySelectorAll('.nav-link, .mega-menu-item, .tech-box-card');
     
     // Determine active menu item based on current URL path
-    const currentPath = window.location.pathname;
-    const currentFilename = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+    let currentPath = window.location.pathname;
+    let currentFilename = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+    
+    if (currentFilename === '' || currentFilename === '/') {
+        currentFilename = 'index.html';
+    }
 
     navLinks.forEach(link => {
         link.classList.remove('active');
-        const href = link.getAttribute('href');
+    });
+
+    navLinks.forEach(link => {
+        let href = link.getAttribute('href');
+        if (!href) return;
         
-        if (href === '/' || href === 'index.html' || href === '') {
-            if (currentFilename === '' || currentFilename === 'index.html') {
-                link.classList.add('active');
+        let cleanHref = href.split('#')[0];
+        if (cleanHref === '' || cleanHref === '/') {
+            cleanHref = 'index.html';
+        }
+        
+        // Exact match
+        if (cleanHref === currentFilename) {
+            link.classList.add('active');
+            
+            // If it's a child link inside a dropdown mega menu, highlight the parent too
+            const parentDropdown = link.closest('.dropdown-mega');
+            if (parentDropdown) {
+                const dropdownToggle = parentDropdown.querySelector('.dropdown-toggle');
+                if (dropdownToggle) {
+                    dropdownToggle.classList.add('active');
+                }
             }
-        } else {
-            if (currentFilename === href) {
-                link.classList.add('active');
+            
+            // If it's a child link in a normal dropdown, highlight parent too
+            const normalDropdown = link.closest('.dropdown');
+            if (normalDropdown && !parentDropdown) {
+                const dropdownToggle = normalDropdown.querySelector('.dropdown-toggle');
+                if (dropdownToggle) {
+                    dropdownToggle.classList.add('active');
+                }
             }
         }
-
-        // Immediately set active when clicked
-        link.addEventListener('click', function() {
-            navLinks.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-        });
     });
 
     let drawerLinksHtml = '';
