@@ -11,6 +11,11 @@
   <!-- favicon icon -->
   <link rel="shortcut icon" href="assets/images/favicon-icon.png" type="image/png">
   <link rel="icon" href="assets/images/favicon-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Icons -->
@@ -240,7 +245,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link " href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link " href="ourproducts.html">Our Products</a></li>
           <li class="nav-item"><a class="nav-link " href="career.html">Careers</a></li>
         </ul>
@@ -250,17 +255,17 @@
   </nav>
 
   <!-- ========== SERVICES HERO ========== -->
-  <section class="about-hero">
-    <div class="about-hero-dots"></div>
-    <div class="container container-xl text-center reveal reveal-1">
-      <span class="eyebrow">Services</span>
-      <h1 class="about-hero-title">Our Services</h1>
-      <p class="section-sub mx-auto">Comprehensive digital solutions tailored to elevate your business.</p>
+  <section class="products-hero position-relative">
+    
+    <div class="container container-xl text-center position-relative z-2">
+      <div class="products-hero-badge">
+        <i class="bi bi-stars"></i> OUR SERVICES
+      </div>
+      <h1 class="products-hero-title">
+        Top-Tier IT Solutions For<br>Your <span class="text-gradient">Business</span>
+      </h1>
+      <p class="products-hero-subtitle">Comprehensive digital solutions tailored to elevate your business,<br>enhance productivity, and deliver measurable results.</p>
     </div>
-    <svg class="about-hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,30 C 240,60 480,0 720,30 C 960,60 1200,0 1440,30" fill="none" stroke="rgba(138,28,28,.15)"
-        stroke-width="2" />
-    </svg>
   </section>
 
   <!-- ========== SERVICE BLOCKS ========== -->
@@ -573,69 +578,222 @@
   </section>
 
 
-  <!-- ========== FOOTER ========== -->
-  <!-- CTA / NEWSLETTER -->
-  <section class="py-5 bg-white">
-    <div class="container py-4 reveal">
-      <div class="cta-section border">
-        <h2 class="display-5 fw-bold mb-3 text-dark">Ready to Transform Your <span class="grad-text">Vision?</span></h2>
-        <p class="text-muted mb-4" style="font-size: 1.1rem;">Let's build something extraordinary together. Enter your
-          email below to get started.</p>
-
-        <form class="cta-newsletter d-flex justify-content-center mx-auto" onsubmit="event.preventDefault();">
-          <input type="email" placeholder="Enter your email address" required>
-          <button type="submit" class="btn-grad text-white fw-bold shadow-sm">Get Started</button>
-        </form>
+  <!-- FOOTER -->
+  <footer class="footer-vasundhara">
+    <div class="container position-relative z-2">
+      <!-- Top Section -->
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="assets/images/digitalks_logo.png" alt="Digitalks Logo" class="footer-logo mb-3">
+          <p class="footer-about-text">
+            What happens when industry-leading developers, designers, innovators, and marketers team up to deliver the
+            highest quality digital solutions? Well, Digitalks happened, and that was back in 2013. Since then, we have
+            been one of the fastest-growing IT companies, focused on providing reliable and the best IT services to
+            clients across the globe.
+          </p>
+        </div>
+        <div class="col-lg-5 ms-auto">
+          <h5 class="fw-bold mb-3 footer-heading-dark">Get the freshest Digitalks Tech News</h5>
+          <p class="footer-about-text mb-4">Join the 300+ developers, designers and agencies we're proud to have as fans
+          </p>
+          <div class="newsletter-inline">
+            <input type="email" placeholder="Email Address">
+            <button>Subscribe</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <footer id="footer">
-    <div class="container container-xl">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <a class="navbar-brand brand-logo" href="#"><img src="assets/images/Digitalkslogo.webp"
-              alt="Digitalks Techno logo"></a>
-          <p class="desc mt-3">Modern digital solutions for growing businesses. We turn ideas into digital reality.</p>
-          <div class="social-icons mt-3">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+      <hr class="footer-divider mb-5">
+
+      <!-- Links Section -->
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-md-3">
+          <h6 class="footer-col-title">Company</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="https://digitalkstechno.com/"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="https://digitalkstechno.com/about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Services</a></li>
+            <li><a href="https://digitalkstechno.com/contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            <li><a href="faqs.html"><i class="bi bi-chevron-right"></i> FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-col-title">Services</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Web Development</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> App Development</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> UI / UX Design</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/services"><i class="bi bi-chevron-right"></i> Digital Marketing</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-col-title">Explore</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="https://digitalkstechno.com/solution"><i class="bi bi-chevron-right"></i> Solutions</a></li>
+            <li><a href="https://digitalkstechno.com/ourproducts"><i class="bi bi-chevron-right"></i> Our Products</a>
+            </li>
+            <li><a href="https://digitalkstechno.com/innovations"><i class="bi bi-chevron-right"></i> Our
+                Innovations</a></li>
+            <li><a href="https://digitalkstechno.com/lifedigitalks"><i class="bi bi-chevron-right"></i> Life at
+                Digitalks</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6 class="footer-col-title">Our Locations</h6>
+          <div class="location-box mb-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="https://flagcdn.com/w20/in.png" alt="India">
+              <span class="fw-bold text-dark">India</span>
+            </div>
+            <p class="footer-about-text small">Digitalks Techno, Opp. Nayara Petrol Pump, Singanpore Road, Katargam,
+              Surat-395004, Gujarat, India.</p>
+          </div>
+
+          <hr class="footer-divider mb-4">
+
+          <!-- <div class="location-box mb-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="https://flagcdn.com/w20/us.png" alt="USA">
+              <span class="fw-bold text-dark">United States</span>
+            </div>
+            <p class="footer-about-text small">22 Liberty Ave APT 3A Jersey City, NJ 07306-5874 United States.</p>
+          </div> -->
+
+          <div class="footer-social-circles mt-4">
             <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter-x"></i></a>
           </div>
         </div>
-        <div class="col-6 col-lg-2">
-          <h6>Company</h6>
-          <a href="/">Home</a>
-          <a href="aboutus.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h6>Services</h6>
-          <a href="services.html">Web Development</a>
-          <a href="services.html">App Development</a>
-          <a href="services.html">UI / UX Design</a>
-          <a href="services.html">Digital Marketing</a>
-        </div>
-        <div class="col-lg-4">
-          <h6>Contact</h6>
-          <a href="tel:+919974470999"><i class="bi bi-telephone-fill me-2"></i>+91 9974 4470 99</a>
-          <a href="mailto:contact@digitalkstechno.com"><i
-              class="bi bi-envelope-fill me-2"></i>contact@digitalkstechno.com</a>
-          <a href="https://maps.app.goo.gl/Je51bqBj6CDxckMe9"><i class="bi bi-geo-alt-fill me-2"></i>C1, 2nd Floor,
-            Adarsh Farsan Mart, Ganesh Colony, Baroda
-            Prestige, Surat, Gujarat - 395006, India</a>
-        </div>
       </div>
-      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
-        <span>&copy; 2026 Digitalks Techno LLP. All rights reserved.</span>
-        <span><a href="privacy_policy.html" class="d-inline">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html"
-            class="d-inline">Terms of
-            Service</a></span>
+
+      <!-- Copyright Bottom -->
+      <div class="footer-bottom text-center pt-4 position-relative z-2">
+        <p class="footer-about-text small mb-0">Copyright &copy; 2026 Digitalks Techno LLP. All Rights Reserved. | <a
+            href="#" class="text-decoration-none footer-about-text">Terms of Use</a> | <a href="#"
+            class="text-decoration-none footer-about-text">Privacy Policy</a></p>
       </div>
     </div>
+
+    <div class="footer-giant-text">Digitalks.</div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+
+    const statEls = document.querySelectorAll('.stat-num[data-count]');
+    const statIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const target = parseInt(el.dataset.count, 10);
+          let cur = 0;
+          const step = Math.max(1, Math.floor(target / 60));
+          const timer = setInterval(() => {
+            cur += step;
+            if (cur >= target) { cur = target; clearInterval(timer); }
+            el.textContent = cur.toLocaleString() + '+';
+          }, 20);
+          statIO.unobserve(el);
+        }
+      });
+    }, { threshold: 0.4 });
+    statEls.forEach(el => statIO.observe(el));
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mapSection = document.getElementById("ai-services-map");
+      const pills = mapSection.querySelectorAll(".floating-pill");
+
+      let targetX = 0;
+      let targetY = 0;
+      let currentX = 0;
+      let currentY = 0;
+      let time = 0;
+
+      mapSection.addEventListener("mousemove", (e) => {
+        const rect = mapSection.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        targetX = (x - centerX) / centerX;
+        targetY = (y - centerY) / centerY;
+      });
+
+      mapSection.addEventListener("mouseleave", () => {
+        targetX = 0;
+        targetY = 0;
+      });
+
+      function animate() {
+        time += 0.015; // smooth float speed
+
+        // Silky smooth mouse easing
+        currentX += (targetX - currentX) * 0.05;
+        currentY += (targetY - currentY) * 0.05;
+
+        pills.forEach((pill, index) => {
+          const speed = parseFloat(pill.getAttribute("data-speed")) || 20;
+
+          // Parallax offset
+          const pX = currentX * speed;
+          const pY = currentY * speed;
+
+          // Organic float (sine wave), different phase per pill
+          const floatY = Math.sin(time + index) * 12;
+          const floatX = Math.cos(time + index * 0.5) * 4;
+
+          // Set CSS variables for the translate property
+          pill.style.setProperty('--x', `${pX + floatX}px`);
+          pill.style.setProperty('--y', `${pY + floatY}px`);
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Project Cards Stacking Animation
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        const stackCards = gsap.utils.toArray('.stack-card');
+        stackCards.forEach((card, index) => {
+          if (index === stackCards.length - 1) return; // Skip last card
+
+          gsap.to(card, {
+            scale: 0.94,
+            y: -30,
+            scrollTrigger: {
+              trigger: stackCards[index + 1],
+              start: "top 85%",
+              end: "top 15vh",
+              scrub: 1,
+              invalidateOnRefresh: true
+            }
+          });
+        });
+      }
+    });
+  </script>
   <!-- ========== CHAT WIDGET ========== -->
   <div class="chat-widget">
     <button class="chat-fab" id="chatFabBtn" aria-label="Open chat with Digitalks Assistant">
@@ -647,7 +805,7 @@
         <button class="chat-popup-close" id="chatCloseBtn" aria-label="Close chat"><i class="bi bi-x-lg"></i></button>
       </div>
       <div class="chat-popup-body">
-        <p class="mb-0">👋 Hello! I'm <strong>Digitalks Assistant</strong>. How can I help you today?</p>
+        <p class="mb-0">­ƒæï Hello! I'm <strong>Digitalks Assistant</strong>. How can I help you today?</p>
       </div>
       <div class="chat-popup-footer">
         <a href="https://wa.me/919974447099" target="_blank" rel="noopener" class="chat-whatsapp-btn">
@@ -674,28 +832,8 @@
       });
     })();
   </script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/navbar.js?v=1.2"></script>
-  <script>
-    // Navbar glass effect on scroll
-    const nav = document.querySelector('.navbar-custom');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 30);
-    }, { passive: true });
-
-    // Scroll reveal
-    const revealEls = document.querySelectorAll('.reveal');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .12 });
-    revealEls.forEach(el => io.observe(el));
-  </script>
 </body>
 
 </html>
+
+

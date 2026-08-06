@@ -8371,3 +8371,168 @@ footer .foot-copy {
     font-size: 36px;
   }
 }
+/* ========================================= */
+/* SERVICES PAGE CSS                         */
+/* ========================================= */
+
+.service-block {
+  padding: 100px 0;
+  background-color: var(--bg);
+  position: relative;
+}
+.service-block-alt {
+  background-color: var(--surface-2);
+}
+
+.service-eyebrow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: var(--purple-light);
+  color: var(--purple);
+  font-size: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.service-block-alt .service-eyebrow-icon {
+  background: var(--indigo);
+  color: var(--bg);
+}
+
+.service-block .section-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.service-block .accent {
+  background: var(--grad-diag);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.service-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--surface);
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.service-check:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border-color: rgba(99, 102, 241, 0.15);
+}
+.service-block-alt .service-check {
+  background: var(--bg);
+}
+.service-check i {
+  color: var(--cyan);
+  font-size: 18px;
+}
+.service-block-alt .service-check i {
+  color: var(--indigo);
+}
+
+/* Glassmorphism visual container */
+.service-visual {
+  position: relative;
+  border-radius: 30px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.015);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  z-index: 3;
+}
+/* Glowing orbs behind the glass */
+.service-visual::before,
+.service-visual::after {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: blur(60px);
+  opacity: 0.7;
+}
+/* Cyan Orb */
+.service-visual::before {
+  top: -30px;
+  left: -30px;
+  background: rgba(14, 165, 233, 0.5); /* --cyan */
+}
+/* Purple Orb */
+.service-visual::after {
+  bottom: -30px;
+  right: -30px;
+  background: rgba(217, 70, 239, 0.5); /* --purple */
+}
+
+/* Alternate block colors */
+.service-block-alt .service-visual::before {
+  top: auto; bottom: -30px; left: -30px;
+  background: rgba(99, 102, 241, 0.5); /* --indigo */
+}
+.service-block-alt .service-visual::after {
+  bottom: auto; top: -30px; right: -30px;
+  background: rgba(234, 88, 12, 0.4); /* --orange */
+}
+
+.service-visual:hover::before {
+  transform: scale(1.4) translate(-10px, -10px);
+  opacity: 0.9;
+}
+.service-visual:hover::after {
+  transform: scale(1.4) translate(10px, 10px);
+  opacity: 0.9;
+}
+
+@keyframes floatVisual {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.service-visual-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  animation: floatVisual 6s ease-in-out infinite;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.service-visual:hover .service-visual-img {
+  transform: scale(1.06) translateY(-5px);
+  animation-play-state: paused;
+}
+
+@media (max-width: 991px) {
+  .service-block {
+    padding: 70px 0;
+  }
+  .service-block .section-title {
+    font-size: 32px;
+  }
+  .service-visual {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .service-visual::before,
+  .service-visual::after {
+    display: none;
+  }
+}
