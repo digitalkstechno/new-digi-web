@@ -446,7 +446,7 @@
     <p class="wacrm-walkthrough-desc">Monitor message delivery statuses, active reminder queues, and daily automation stats in real-time.</p>
     
     <!-- Interactive Frame -->
-    <div class="wacrm-mock-dashboard text-start mx-auto digi-style-249">
+    <div class="wacrm-mock-dashboard text-start mx-auto">
       <div class="wacrm-mock-top">
         <div class="wacrm-mock-dots">
           <span class="wacrm-mock-dot red"></span>
@@ -533,7 +533,7 @@
           
           <div class="wacrm-circle-branches">
             <!-- SVG connecting lines from center to each step -->
-            <svg class="digi-style-250" width="100%" height="100%" viewBox="0 0 520 520" preserveAspectRatio="none">
+            <svg class="custom-section-style-109" width="100%" height="100%" viewBox="0 0 520 520" preserveAspectRatio="none">
               <!-- Center is at 260,260. Steps approx: top=260,30 | right=460,155 | bottom-right=420,415 | bottom-left=100,415 | left=60,155 -->
               <line x1="260" y1="260" x2="260" y2="55" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
               <line x1="260" y1="260" x2="460" y2="175" stroke="#8a1c1c" stroke-width="1.5" stroke-dasharray="5 4"/>
@@ -725,7 +725,23 @@
 </section>
 
 <!-- ========== FOOTER ========== -->
-<footer id="footer">
+<!-- CTA / NEWSLETTER -->
+  <section class="py-5 bg-white">
+    <div class="container py-4 reveal">
+      <div class="cta-section border">
+        <h2 class="display-5 fw-bold mb-3 text-dark">Ready to Transform Your <span class="grad-text">Vision?</span></h2>
+        <p class="text-muted mb-4" style="font-size: 1.1rem;">Let's build something extraordinary together. Enter your
+          email below to get started.</p>
+
+        <form class="cta-newsletter d-flex justify-content-center mx-auto" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn-grad text-white fw-bold shadow-sm">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
   <div class="container container-xl">
     <div class="row g-4">
       <div class="col-lg-4">
