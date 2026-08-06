@@ -554,16 +554,16 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--purple);
-  background: #fff;
-  border: 1px solid var(--border);
-  padding: 8px 16px;
+  background: rgba(124, 58, 237, 0.06);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  padding: 8px 18px;
   border-radius: 999px;
   margin-bottom: 22px;
-  box-shadow: 0 6px 16px -8px rgba(124, 58, 237, 0.18);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
 }
 
 .eyebrow {
@@ -4907,7 +4907,7 @@ footer .foot-copy {
   padding: 60px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .cta-content {
@@ -8130,4 +8130,244 @@ footer .foot-copy {
 
 .solution-card:hover::after {
     width: 100%;
+}
+
+
+/* ================================== */
+/* SOLUTIONS THEME SECTION            */
+/* ================================== */
+.bg-grad {
+  background: var(--grad);
+}
+.text-grad-diag {
+  background: var(--grad-diag);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.solutions-theme-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.solution-theme-pill {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 50px;
+  padding: 8px 20px 8px 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  cursor: pointer;
+}
+
+.solution-theme-pill .icon-wrapper {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.08); /* light purple */
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.4s ease;
+}
+
+.solution-theme-pill .text-wrapper {
+  font-weight: 600;
+  color: #333;
+  font-size: 17px;
+  transition: all 0.4s ease;
+  white-space: nowrap;
+}
+
+.solution-theme-pill:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: var(--grad-diag);
+  border-color: transparent;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+}
+
+.solution-theme-pill:hover .icon-wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: rotate(10deg);
+}
+
+.solution-theme-pill:hover .text-wrapper {
+  color: #fff;
+}
+/* ========================================= */
+/* OUR PRODUCTS (INNOVATIONS) CARDS CSS      */
+/* ========================================= */
+.innovations-section {
+  padding: 60px 0 0;
+  background-color: #fafbfc;
+}
+.innovation-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.innovation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+.innovation-media {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.innovation-media img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+.innovation-launch {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  background: var(--bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--indigo);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  z-index: 2;
+}
+.innovation-launch:hover {
+  transform: scale(1.1);
+  color: var(--purple);
+}
+.innovation-tag {
+  display: inline-block;
+  background-color: var(--purple-light);
+  color: var(--purple);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  align-self: flex-start;
+}
+.innovation-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 15px;
+}
+.innovation-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+.innovation-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: var(--grad);
+  color: var(--bg);
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.innovation-btn i {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.innovation-btn:hover {
+  background: var(--grad-diag);
+  color: var(--bg);
+}
+/* ========================================= */
+/* PRODUCTS HERO CSS                         */
+/* ========================================= */
+.products-hero {
+  position: relative;
+  padding: 160px 0 80px;
+  background: radial-gradient(circle at 0% 0%, rgba(14, 165, 233, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 100% 100%, rgba(217, 70, 239, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 60%);
+  background-color: var(--surface);
+  text-align: center;
+  overflow: hidden;
+}
+.products-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg);
+  padding: 8px 18px;
+  border-radius: 50px;
+  color: var(--indigo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  margin-bottom: 20px;
+}
+.products-hero-badge i {
+  font-size: 14px;
+}
+.products-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-bottom: 25px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.products-hero-title .text-gradient {
+  background: var(--grad-diag);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.products-hero-subtitle {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .products-hero {
+    padding: 80px 0 60px;
+  }
+  .products-hero-title {
+    font-size: 36px;
+  }
 }
