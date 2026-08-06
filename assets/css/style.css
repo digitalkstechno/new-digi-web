@@ -7508,7 +7508,7 @@ footer .foot-copy {
 .digi-style-104 { position: absolute; left: 95%; top: 50%; width: 220px; z-index: 2; }
 .digi-style-34 { font-size: 2.8rem; }
 .digi-style-35 { border-radius: 24px; }
-.digi-style-36 { padding: 140px 0 60px; border-bottom: 1px solid rgba(255,255,255,0.7); background-color: var(--gray-light); background-color: var(--purple-light); }
+.digi-style-36 { padding: 140px 0 60px; border-bottom: 1px solid rgba(255,255,255,0.7); background: radial-gradient(circle at 10% 50%, var(--blue-light) 0%, transparent 40%), radial-gradient(circle at 90% 50%, var(--purple-light) 0%, transparent 40%), var(--gray-light); }
 .digi-style-37 { width: 500px; height: 500px; background: linear-gradient(135deg, rgba(56, 189, 248, 0.3), rgba(129, 140, 248, 0.3)); filter: blur(80px); top: -150px; left: -100px; animation: blob-float 15s infinite alternate ease-in-out; }
 .digi-style-38 { width: 400px; height: 400px; background: linear-gradient(135deg, rgba(192, 132, 252, 0.2), rgba(244, 114, 182, 0.2)); filter: blur(60px); bottom: -100px; right: -50px; animation: blob-float 12s infinite alternate-reverse ease-in-out; }
 .digi-style-39 { background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px); background-size: 40px 40px; opacity: 0.8; }
@@ -7536,7 +7536,7 @@ footer .foot-copy {
 .digi-style-61 { border: none; border-radius: 50px; }
 .digi-style-62 { height: 180px; overflow: hidden; mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent); }
 .digi-style-63 { transition: transform 0.6s ease-in-out; transform: translateY(0px); }
-.digi-style-64 { padding: 140px 0 70px; border-bottom: 1px solid rgba(255,255,255,0.7); background-color: var(--gray-light); background-color: var(--purple-light); }
+.digi-style-64 { padding: 140px 0 70px; border-bottom: 1px solid rgba(255,255,255,0.7); background: radial-gradient(circle at 10% 50%, var(--blue-light) 0%, transparent 40%), radial-gradient(circle at 90% 50%, var(--purple-light) 0%, transparent 40%), var(--gray-light); }
 .digi-style-65 { width: 600px; height: 600px; background: linear-gradient(135deg, rgba(56, 189, 248, 0.3), rgba(129, 140, 248, 0.3)); filter: blur(90px); top: -200px; left: -100px; animation: blob-float 15s infinite alternate ease-in-out; }
 .digi-style-66 { width: 500px; height: 500px; background: linear-gradient(135deg, rgba(192, 132, 252, 0.25), rgba(244, 114, 182, 0.25)); filter: blur(80px); bottom: -150px; right: -100px; animation: blob-float 12s infinite alternate-reverse ease-in-out; }
 .digi-style-67 { background: rgba(255,255,255,0.6); backdrop-filter: blur(5px); border-color: var(--cyan); color: var(--cyan); }
